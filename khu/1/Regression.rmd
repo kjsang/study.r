@@ -1,0 +1,36 @@
+---
+title: "Regression fundamentals"
+author: "J.S.Kim"
+date: "7/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## introduction
+
+**0.package Loading**
+```{R}
+# 0. packages and data loading
+if (!require("pacman")) install.packages("pacman") 
+pacman::p_load(tidyverse, magrittr, # helper packages
+               tidymodels, # modeling packages
+               modeldata) # package including datasets
+```
+엄청 대단한 R마크다운 문법이다. 
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

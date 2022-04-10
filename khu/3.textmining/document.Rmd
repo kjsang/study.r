@@ -1,0 +1,50 @@
+---
+title: "article_analysis"
+author: "J.S.Kim"
+date: "7/22/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 패키지 설치
+
+```{r}
+if (!require("pacman")) (install.packages("pacman"))
+pacman::p_load(
+  tidyverse, magrittr, wordcloud2,
+  KoNLP, tm
+  )
+```
+
+### 데이터 로드
+
+```{r}
+readxl::read_xls("article_platform.xls") -> raw
+raw %>% select(keyword)
+raw %>% 
+  select(NO, title, keyword, year, field) %>% 
+  mutate(keyword_word = keyword %>% 
+           str_split(pattern = ", ")) %>% 
+  unnest(keyword_word) %>% 
+  mutate(keyword_word = keyword_word %>% 
+           str_replace_all(",","")) -> data
+data
+```
+
+```{r}
+data %>% 
+  select(NO, keyword_word) %>% 
+  count(keyword_word) %>% 
+  arrange(desc(n))
+```
+
+왜 이거 안 되는 거지?
+
+```{r}
+
+```

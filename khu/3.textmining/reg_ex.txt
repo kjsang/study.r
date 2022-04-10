@@ -1,0 +1,4292 @@
+Tue Oct 30 17:43:46 2012
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Shared memory segment for instance monitoring created
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in client-side pfile /app/oracle/admin/testdb/pfile/init.ora on machine localhost.localdomain
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Tue Oct 30 17:44:04 2012
+PMON started with pid=2, OS id=10617 
+Tue Oct 30 17:44:04 2012
+PSP0 started with pid=3, OS id=10619 
+Tue Oct 30 17:44:04 2012
+VKTM started with pid=4, OS id=10621 
+VKTM running at (100ms) precision 
+Tue Oct 30 17:44:04 2012
+GEN0 started with pid=5, OS id=10625 
+Tue Oct 30 17:44:05 2012
+DIAG started with pid=6, OS id=10627 
+Tue Oct 30 17:44:05 2012
+DBRM started with pid=7, OS id=10629 
+Tue Oct 30 17:44:05 2012
+MMAN started with pid=9, OS id=10633 
+Tue Oct 30 17:44:05 2012
+DIA0 started with pid=8, OS id=10631 
+Tue Oct 30 17:44:05 2012
+DBW0 started with pid=10, OS id=10635 
+Tue Oct 30 17:44:05 2012
+LGWR started with pid=11, OS id=10637 
+Tue Oct 30 17:44:05 2012
+CKPT started with pid=12, OS id=10639 
+Tue Oct 30 17:44:05 2012
+SMON started with pid=13, OS id=10641 
+Tue Oct 30 17:44:05 2012
+RECO started with pid=14, OS id=10643 
+Tue Oct 30 17:44:05 2012
+MMON started with pid=15, OS id=10645 
+Tue Oct 30 17:44:05 2012
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Tue Oct 30 17:44:05 2012
+MMNL started with pid=16, OS id=10647 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Tue Oct 30 17:44:08 2012
+kcbztek_populate_tbskey: db key in controlfile and datafile 1 is inconsistent..
+Full restore complete of datafile 4 to datafile copy /app/oracle/oradata/testdb/users01.dbf.  Elapsed time: 0:00:01 
+  checkpoint is 770462
+  last deallocation scn is 3
+Full restore complete of datafile 3 to datafile copy /app/oracle/oradata/testdb/undotbs01.dbf.  Elapsed time: 0:00:02 
+  checkpoint is 770462
+  last deallocation scn is 3
+Tue Oct 30 17:45:38 2012
+Full restore complete of datafile 2 to datafile copy /app/oracle/oradata/testdb/sysaux01.dbf.  Elapsed time: 0:01:28 
+  checkpoint is 770462
+  last deallocation scn is 770147
+Tue Oct 30 17:46:07 2012
+Full restore complete of datafile 1 to datafile copy /app/oracle/oradata/testdb/system01.dbf.  Elapsed time: 0:01:59 
+  checkpoint is 770462
+  last deallocation scn is 768153
+Tue Oct 30 17:46:21 2012
+Create controlfile reuse set database "testdb"
+MAXINSTANCES 8
+MAXLOGHISTORY 1
+MAXLOGFILES 16
+MAXLOGMEMBERS 3
+MAXDATAFILES 100
+Datafile
+'/app/oracle/oradata/testdb/system01.dbf',
+'/app/oracle/oradata/testdb/sysaux01.dbf',
+'/app/oracle/oradata/testdb/undotbs01.dbf',
+'/app/oracle/oradata/testdb/users01.dbf'
+LOGFILE GROUP 1 ('/app/oracle/oradata/testdb/redo01.log') SIZE 51200K,
+GROUP 2 ('/app/oracle/oradata/testdb/redo02.log') SIZE 51200K,
+GROUP 3 ('/app/oracle/oradata/testdb/redo03.log') SIZE 51200K RESETLOGS
+WARNING: Default Temporary Tablespace not specified in CREATE DATABASE command
+Default Temporary Tablespace will be necessary for a locally managed database in future release
+Tue Oct 30 17:46:29 2012
+Successful mount of redo thread 1, with mount id 2581380974
+Completed: Create controlfile reuse set database "testdb"
+MAXINSTANCES 8
+MAXLOGHISTORY 1
+MAXLOGFILES 16
+MAXLOGMEMBERS 3
+MAXDATAFILES 100
+Datafile
+'/app/oracle/oradata/testdb/system01.dbf',
+'/app/oracle/oradata/testdb/sysaux01.dbf',
+'/app/oracle/oradata/testdb/undotbs01.dbf',
+'/app/oracle/oradata/testdb/users01.dbf'
+LOGFILE GROUP 1 ('/app/oracle/oradata/testdb/redo01.log') SIZE 51200K,
+GROUP 2 ('/app/oracle/oradata/testdb/redo02.log') SIZE 51200K,
+GROUP 3 ('/app/oracle/oradata/testdb/redo03.log') SIZE 51200K RESETLOGS
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Tue Oct 30 17:46:32 2012
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1109 signalled during: ALTER DATABASE CLOSE NORMAL...
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Tue Oct 30 17:46:35 2012
+Stopping background process VKTM
+Tue Oct 30 17:46:38 2012
+Instance shutdown complete
+Tue Oct 30 17:46:40 2012
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in client-side pfile /app/oracle/cfgtoollogs/dbca/testdb/inittestdbTemp.ora on machine localhost.localdomain
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  _no_recovery_through_resetlogs= TRUE
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Tue Oct 30 17:46:55 2012
+PSP0 started with pid=3, OS id=10729 
+Tue Oct 30 17:46:55 2012
+PMON started with pid=2, OS id=10727 
+Tue Oct 30 17:46:56 2012
+VKTM started with pid=4, OS id=10731 
+Tue Oct 30 17:46:56 2012
+GEN0 started with pid=5, OS id=10735 
+VKTM running at (100ms) precision 
+Tue Oct 30 17:46:56 2012
+DIAG started with pid=6, OS id=10737 
+Tue Oct 30 17:46:56 2012
+DBRM started with pid=7, OS id=10739 
+Tue Oct 30 17:46:56 2012
+DIA0 started with pid=8, OS id=10741 
+Tue Oct 30 17:46:56 2012
+MMAN started with pid=9, OS id=10743 
+Tue Oct 30 17:46:56 2012
+DBW0 started with pid=10, OS id=10745 
+Tue Oct 30 17:46:56 2012
+LGWR started with pid=11, OS id=10747 
+Tue Oct 30 17:46:56 2012
+CKPT started with pid=12, OS id=10749 
+Tue Oct 30 17:46:56 2012
+SMON started with pid=13, OS id=10751 
+Tue Oct 30 17:46:56 2012
+RECO started with pid=14, OS id=10753 
+Tue Oct 30 17:46:56 2012
+MMON started with pid=15, OS id=10755 
+Tue Oct 30 17:46:56 2012
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Tue Oct 30 17:46:56 2012
+MMNL started with pid=16, OS id=10757 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Tue Oct 30 17:46:57 2012
+Create controlfile reuse set database "testdb"
+MAXINSTANCES 8
+MAXLOGHISTORY 1
+MAXLOGFILES 16
+MAXLOGMEMBERS 3
+MAXDATAFILES 100
+Datafile
+'/app/oracle/oradata/testdb/system01.dbf',
+'/app/oracle/oradata/testdb/sysaux01.dbf',
+'/app/oracle/oradata/testdb/undotbs01.dbf',
+'/app/oracle/oradata/testdb/users01.dbf'
+LOGFILE GROUP 1 ('/app/oracle/oradata/testdb/redo01.log') SIZE 51200K,
+GROUP 2 ('/app/oracle/oradata/testdb/redo02.log') SIZE 51200K,
+GROUP 3 ('/app/oracle/oradata/testdb/redo03.log') SIZE 51200K RESETLOGS
+WARNING: Default Temporary Tablespace not specified in CREATE DATABASE command
+Default Temporary Tablespace will be necessary for a locally managed database in future release
+Successful mount of redo thread 1, with mount id 2581420689
+Completed: Create controlfile reuse set database "testdb"
+MAXINSTANCES 8
+MAXLOGHISTORY 1
+MAXLOGFILES 16
+MAXLOGMEMBERS 3
+MAXDATAFILES 100
+Datafile
+'/app/oracle/oradata/testdb/system01.dbf',
+'/app/oracle/oradata/testdb/sysaux01.dbf',
+'/app/oracle/oradata/testdb/undotbs01.dbf',
+'/app/oracle/oradata/testdb/users01.dbf'
+LOGFILE GROUP 1 ('/app/oracle/oradata/testdb/redo01.log') SIZE 51200K,
+GROUP 2 ('/app/oracle/oradata/testdb/redo02.log') SIZE 51200K,
+GROUP 3 ('/app/oracle/oradata/testdb/redo03.log') SIZE 51200K RESETLOGS
+Stopping background process MMNL
+Stopping background process MMON
+Starting background process MMON
+Starting background process MMNL
+Tue Oct 30 17:47:03 2012
+MMON started with pid=15, OS id=10803 
+ALTER SYSTEM enable restricted session;
+Tue Oct 30 17:47:03 2012
+MMNL started with pid=16, OS id=10805 
+alter database "testdb" open resetlogs
+RESETLOGS after incomplete recovery UNTIL CHANGE 770462
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 1 of thread 1
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Clearing online redo logfile 1 /app/oracle/oradata/testdb/redo01.log
+Clearing online log 1 of thread 1 sequence number 0
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 1 of thread 1
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 1 of thread 1
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Clearing online redo logfile 1 complete
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 2 of thread 1
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Clearing online redo logfile 2 /app/oracle/oradata/testdb/redo02.log
+Clearing online log 2 of thread 1 sequence number 0
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 2 of thread 1
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 2 of thread 1
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Clearing online redo logfile 2 complete
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 3 of thread 1
+ORA-00312: online log 3 thread 1: '/app/oracle/oradata/testdb/redo03.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Clearing online redo logfile 3 /app/oracle/oradata/testdb/redo03.log
+Clearing online log 3 of thread 1 sequence number 0
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 3 of thread 1
+ORA-00312: online log 3 thread 1: '/app/oracle/oradata/testdb/redo03.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_10762.trc:
+ORA-00313: open failed for members of log group 3 of thread 1
+ORA-00312: online log 3 thread 1: '/app/oracle/oradata/testdb/redo03.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Tue Oct 30 17:47:07 2012
+Clearing online redo logfile 3 complete
+Online log /app/oracle/oradata/testdb/redo01.log: Thread 1 Group 1 was previously cleared
+Online log /app/oracle/oradata/testdb/redo02.log: Thread 1 Group 2 was previously cleared
+Online log /app/oracle/oradata/testdb/redo03.log: Thread 1 Group 3 was previously cleared
+Tue Oct 30 17:47:07 2012
+Checker run found 1 new persistent data failures
+Tue Oct 30 17:47:10 2012
+Setting recovery target incarnation to 2
+Tue Oct 30 17:47:12 2012
+Assigning activation ID 2581420689 (0x99dd5a91)
+Thread 1 opened at log sequence 1
+  Current log# 1 seq# 1 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Tue Oct 30 17:47:14 2012
+SMON: enabling cache recovery
+Tue Oct 30 17:47:30 2012
+[10762] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:3255764 end:3261514 diff:5750 (57 seconds)
+Dictionary check beginning
+Tablespace 'TEMP' #3 found in data dictionary,
+but not in the controlfile. Adding to controlfile.
+Dictionary check complete
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+Tue Oct 30 17:47:33 2012
+SMON: enabling tx recovery
+*********************************************************************
+WARNING: The following temporary tablespaces contain no files.
+         This condition can occur when a backup controlfile has
+         been restored.  It may be necessary to add files to these
+         tablespaces.  That can be done using the SQL statement:
+ 
+         ALTER TABLESPACE <tablespace_name> ADD TEMPFILE
+ 
+         Alternatively, if these temporary tablespaces are no longer
+         needed, then they can be dropped.
+           Empty temporary tablespace: TEMP
+*********************************************************************
+Database Characterset is US7ASCII
+Create Relation IPS_PACKAGE_UNPACK_HISTORY
+No Resource Manager plan active
+Tue Oct 30 17:47:42 2012
+**********************************************************
+WARNING: Files may exists in db_recovery_file_dest
+that are not known to the database. Use the RMAN command
+CATALOG RECOVERY AREA to re-catalog any such files.
+If files cannot be cataloged, then manually delete them
+using OS command.
+One of the following events caused this:
+1. A backup controlfile was restored.
+2. A standby controlfile was restored.
+3. The controlfile was re-created.
+4. db_recovery_file_dest had previously been enabled and
+   then disabled.
+**********************************************************
+replication_dependency_tracking turned off (no async multimaster replication found)
+Tue Oct 30 17:47:52 2012
+Starting background process QMNC
+Tue Oct 30 17:47:52 2012
+QMNC started with pid=20, OS id=10830 
+LOGSTDBY: Validating controlfile with logical metadata
+LOGSTDBY: Validation complete
+Global Name changed to TESTDB
+Tue Oct 30 17:47:57 2012
+Starting background process CJQ0
+Tue Oct 30 17:47:57 2012
+CJQ0 started with pid=21, OS id=10863 
+Completed: alter database "testdb" open resetlogs
+alter database rename global_name to "testdb"
+Completed: alter database rename global_name to "testdb"
+ALTER TABLESPACE TEMP ADD TEMPFILE '/app/oracle/oradata/testdb/temp01.dbf' SIZE 20480K REUSE AUTOEXTEND ON NEXT 640K MAXSIZE UNLIMITED
+Completed: ALTER TABLESPACE TEMP ADD TEMPFILE '/app/oracle/oradata/testdb/temp01.dbf' SIZE 20480K REUSE AUTOEXTEND ON NEXT 640K MAXSIZE UNLIMITED
+ALTER DATABASE DEFAULT TABLESPACE "USERS"
+Completed: ALTER DATABASE DEFAULT TABLESPACE "USERS"
+ALTER SYSTEM disable restricted session;
+Tue Oct 30 17:48:30 2012
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Tue Oct 30 17:48:38 2012
+Full restore complete of datafile 5 to datafile copy /app/oracle/oradata/testdb/example01.dbf.  Elapsed time: 0:00:13 
+  checkpoint is 790583
+  last deallocation scn is 790094
+Tue Oct 30 17:49:24 2012
+DM00 started with pid=26, OS id=10918, job SYS.SYS_IMPORT_TRANSPORTABLE_01
+Tue Oct 30 17:49:41 2012
+DW00 started with pid=27, OS id=10923, wid=1, job SYS.SYS_IMPORT_TRANSPORTABLE_01
+Tue Oct 30 17:50:03 2012
+Plug in tablespace EXAMPLE with datafile
+  '/app/oracle/oradata/testdb/example01.dbf'
+Tue Oct 30 17:50:05 2012
+Starting background process SMCO
+Tue Oct 30 17:50:05 2012
+SMCO started with pid=30, OS id=10943 
+Tue Oct 30 17:50:49 2012
+XDB installed.
+XDB initialized.
+Tue Oct 30 17:51:02 2012
+ALTER TABLESPACE example READ WRITE
+Completed: ALTER TABLESPACE example READ WRITE
+Tue Oct 30 17:51:12 2012
+Shared IO Pool defaulting to 24MB. Trying to get it from Buffer Cache for process 10985.
+Tue Oct 30 17:52:01 2012
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Stopping background process QMNC
+Tue Oct 30 17:52:07 2012
+Stopping background process CJQ0
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 14
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Tue Oct 30 17:52:10 2012
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Tue Oct 30 17:52:11 2012
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 1
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Tue Oct 30 17:52:12 2012
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Tue Oct 30 17:52:12 2012
+Stopping background process VKTM
+Tue Oct 30 17:52:14 2012
+Instance shutdown complete
+Tue Oct 30 17:52:15 2012
+Starting ORACLE instance (restrict)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in client-side pfile /app/oracle/cfgtoollogs/dbca/testdb/inittestdbTemp.ora on machine localhost.localdomain
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  _no_recovery_through_resetlogs= TRUE
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Tue Oct 30 17:52:16 2012
+PMON started with pid=2, OS id=11023 
+Tue Oct 30 17:52:16 2012
+PSP0 started with pid=3, OS id=11025 
+Tue Oct 30 17:52:17 2012
+VKTM started with pid=4, OS id=11027 
+VKTM running at (100ms) precision 
+Tue Oct 30 17:52:17 2012
+GEN0 started with pid=5, OS id=11031 
+Tue Oct 30 17:52:17 2012
+DIAG started with pid=6, OS id=11033 
+Tue Oct 30 17:52:17 2012
+DBRM started with pid=7, OS id=11035 
+Tue Oct 30 17:52:17 2012
+DIA0 started with pid=8, OS id=11037 
+Tue Oct 30 17:52:17 2012
+MMAN started with pid=9, OS id=11039 
+Tue Oct 30 17:52:17 2012
+DBW0 started with pid=10, OS id=11041 
+Tue Oct 30 17:52:17 2012
+LGWR started with pid=11, OS id=11043 
+Tue Oct 30 17:52:17 2012
+CKPT started with pid=12, OS id=11045 
+Tue Oct 30 17:52:18 2012
+SMON started with pid=13, OS id=11047 
+Tue Oct 30 17:52:18 2012
+RECO started with pid=14, OS id=11049 
+Tue Oct 30 17:52:18 2012
+MMON started with pid=15, OS id=11051 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Tue Oct 30 17:52:18 2012
+MMNL started with pid=16, OS id=11053 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Tue Oct 30 17:52:18 2012
+ALTER DATABASE   MOUNT
+Changing di2dbun from  to testdb
+Successful mount of redo thread 1, with mount id 2581384914
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Tue Oct 30 17:52:23 2012
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 1
+  Current log# 1 seq# 1 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[11098] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:3554834 end:3554924 diff:90 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is US7ASCII
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Tue Oct 30 17:52:24 2012
+QMNC started with pid=20, OS id=11100 
+Completed: ALTER DATABASE OPEN
+alter database character set INTERNAL_CONVERT KO16MSWIN949
+Starting background process CJQ0
+Tue Oct 30 17:52:25 2012
+CJQ0 started with pid=21, OS id=11102 
+Tue Oct 30 17:52:29 2012
+Starting background process SMCO
+Tue Oct 30 17:52:30 2012
+SMCO started with pid=22, OS id=11104 
+Tue Oct 30 17:52:31 2012
+Thread 1 advanced to log sequence 2 (LGWR switch)
+  Current log# 2 seq# 2 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Tue Oct 30 17:52:43 2012
+Updating character set in controlfile to KO16MSWIN949
+Synchronizing connection with database character set information
+ SYS.EXTERNAL_TAB$ (PARAM_CLOB) - CLOB representation altered
+ SYS.RULE$ (CONDITION) - CLOB representation altered
+ SYS.SCHEDULER$_EVENT_LOG (ADDITIONAL_INFO) - CLOB representation altered
+ SYS.WRI$_REPT_FILES (SYS_NC00005$) - CLOB representation altered
+ SYS.SNAP$ (REL_QUERY) - CLOB representation altered
+ SYS.SNAP$ (ALIAS_TXT) - CLOB representation altered
+ SYS.WRI$_ADV_OBJECTS (ATTR4) - CLOB representation altered
+ SYS.WRI$_ADV_OBJECTS (OTHER) - CLOB representation altered
+ SYS.WRI$_ADV_DIRECTIVE_META (DATA) - CLOB representation altered
+ SYS.SUM$ (SRC_STMT) - CLOB representation altered
+ SYS.SUM$ (DEST_STMT) - CLOB representation altered
+ SYS.WRI$_DBU_FEATURE_METADATA (INST_CHK_LOGIC) - CLOB representation altered
+ SYS.WRI$_DBU_FEATURE_METADATA (USG_DET_LOGIC) - CLOB representation altered
+ SYS.WRI$_DBU_HWM_METADATA (LOGIC) - CLOB representation altered
+Tue Oct 30 17:52:48 2012
+Thread 1 advanced to log sequence 3 (LGWR switch)
+  Current log# 3 seq# 3 mem# 0: /app/oracle/oradata/testdb/redo03.log
+ SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY (EXPRESSION) - CLOB representation altered
+ SYS.ATTRIBUTE_TRANSFORMATIONS$ (XSL_TRANSFORMATION) - CLOB representation altered
+ SYS.AUD$ (SQLBIND) - CLOB representation altered
+ SYS.AUD$ (SQLTEXT) - CLOB representation altered
+ SYS.METASTYLESHEET (STYLESHEET) - CLOB representation altered
+ XDB.XDB$RESOURCE (SYS_NC00027$) - CLOB representation altered
+ XDB.XDB$XDB_READY (DATA) - CLOB representation altered
+ XDB.XDB$DXPTAB (SYS_NC00006$) - CLOB representation altered
+ MDSYS.SDO_XML_SCHEMAS (XMLSCHEMA) - CLOB representation altered
+Tue Oct 30 17:53:15 2012
+ MDSYS.SDO_COORD_OP_PARAM_VALS (PARAM_VALUE_FILE) - CLOB representation altered
+ MDSYS.SDO_GEOR_XMLSCHEMA_TABLE (XMLSCHEMA) - CLOB representation altered
+ MDSYS.SDO_STYLES_TABLE (DEFINITION) - CLOB representation altered
+ SYSMAN.MGMT_IP_ELEM_DEFAULT_PARAMS (VALUE) - CLOB representation altered
+ SYSMAN.MGMT_IP_REPORT_ELEM_PARAMS (VALUE) - CLOB representation altered
+ SYSMAN.MGMT_IP_SQL_STATEMENTS (SQL_STATEMENT) - CLOB representation altered
+ SYSMAN.MGMT_JOB_LARGE_PARAMS (PARAM_VALUE) - CLOB representation altered
+ SYSMAN.MGMT_SEC_INFO (B64_LOCAL_CA) - CLOB representation altered
+ SYSMAN.MGMT_SEC_INFO (B64_INTERNET_CA) - CLOB representation altered
+ APEX_030200.WWV_FLOW_FLASH_CHARTS (CHART_XML) - CLOB representation altered
+ APEX_030200.WWV_FLOW_FLASH_CHART_SERIES (SERIES_QUERY) - CLOB representation altered
+ APEX_030200.WWV_FLOW_SHORTCUTS (SHORTCUT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_STEPS (HELP_TEXT) - CLOB representation altered
+Tue Oct 30 17:53:26 2012
+ APEX_030200.WWV_FLOW_STEPS (HTML_PAGE_HEADER) - CLOB representation altered
+ APEX_030200.WWV_FLOW_STEP_PROCESSING (PROCESS_SQL_CLOB) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PAGE_GENERIC_ATTR (ATTRIBUTE_VALUE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_TEMPLATES (HEADER_TEMPLATE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_TEMPLATES (FOOTER_TEMPLATE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_TEMPLATES (BOX) - CLOB representation altered
+Tue Oct 30 17:53:33 2012
+Thread 1 advanced to log sequence 4 (LGWR switch)
+  Current log# 1 seq# 4 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Tue Oct 30 17:53:44 2012
+ APEX_030200.WWV_FLOW_PAGE_PLUGS (PLUG_SOURCE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PAGE_PLUGS (CUSTOM_ITEM_LAYOUT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PAGE_PLUG_TEMPLATES (TEMPLATE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PAGE_PLUG_TEMPLATES (TEMPLATE2) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PAGE_PLUG_TEMPLATES (TEMPLATE3) - CLOB representation altered
+ APEX_030200.WWV_FLOW_PROCESSING (PROCESS_SQL_CLOB) - CLOB representation altered
+Tue Oct 30 17:54:04 2012
+ APEX_030200.WWV_FLOW_REGION_REPORT_COLUMN (PK_COL_SOURCE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_ROW_TEMPLATES (ROW_TEMPLATE1) - CLOB representation altered
+ APEX_030200.WWV_FLOW_ROW_TEMPLATES (ROW_TEMPLATE2) - CLOB representation altered
+ APEX_030200.WWV_FLOW_ROW_TEMPLATES (ROW_TEMPLATE3) - CLOB representation altered
+ APEX_030200.WWV_FLOW_ROW_TEMPLATES (ROW_TEMPLATE4) - CLOB representation altered
+ APEX_030200.WWV_FLOW_BANNER (BANNER) - CLOB representation altered
+ APEX_030200.WWV_FLOW_BUTTON_TEMPLATES (TEMPLATE) - CLOB representation altered
+ APEX_030200.WWV_FLOW_INSTALL (DEINSTALL_SCRIPT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (LIST_TEMPLATE_CURRENT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (LIST_TEMPLATE_NONCURRENT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (SUB_LIST_ITEM_CURRENT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (SUB_LIST_ITEM_NONCURRENT) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (ITEM_TEMPLATE_CURR_W_CHILD) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (ITEM_TEMPLATE_NONCURR_W_CHILD) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (SUB_TEMPLATE_CURR_W_CHILD) - CLOB representation altered
+ APEX_030200.WWV_FLOW_LIST_TEMPLATES (SUB_TEMPLATE_NONCURR_W_CHILD) - CLOB representation altered
+ APEX_030200.WWV_FLOW_WORKSHEETS (SQL_QUERY) - CLOB representation altered
+ APEX_030200.WWV_FLOW_CUSTOM_AUTH_SETUPS (PAGE_SENTRY_FUNCTION) - CLOB representation altered
+ APEX_030200.WWV_FLOW_CUSTOM_AUTH_SETUPS (SESS_VERIFY_FUNCTION) - CLOB representation altered
+Tue Oct 30 17:54:07 2012
+Thread 1 advanced to log sequence 5 (LGWR switch)
+  Current log# 2 seq# 5 mem# 0: /app/oracle/oradata/testdb/redo02.log
+ APEX_030200.WWV_FLOW_CUSTOM_AUTH_SETUPS (PRE_AUTH_PROCESS) - CLOB representation altered
+ APEX_030200.WWV_FLOW_CUSTOM_AUTH_SETUPS (AUTH_FUNCTION) - CLOB representation altered
+ APEX_030200.WWV_FLOW_CUSTOM_AUTH_SETUPS (POST_AUTH_PROCESS) - CLOB representation altered
+ PM.ONLINE_MEDIA (SYS_NC00042$) - CLOB representation altered
+ PM.ONLINE_MEDIA (SYS_NC00062$) - CLOB representation altered
+ PM.ONLINE_MEDIA (PRODUCT_TEXT) - CLOB representation altered
+ PM.ONLINE_MEDIA (SYS_NC00080$) - CLOB representation altered
+ PM.PRINT_MEDIA (AD_SOURCETEXT) - CLOB representation altered
+ PM.PRINT_MEDIA (AD_FINALTEXT) - CLOB representation altered
+Refreshing type attributes with new character set information
+Tue Oct 30 17:54:19 2012
+Completed: alter database character set INTERNAL_CONVERT KO16MSWIN949
+Tue Oct 30 17:54:26 2012
+ALTER SYSTEM disable restricted session;
+Tue Oct 30 17:54:29 2012
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Tue Oct 30 17:55:16 2012
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Tue Oct 30 17:55:33 2012
+Stopping background process CJQ0
+Tue Oct 30 17:55:33 2012
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Tue Oct 30 17:55:36 2012
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Tue Oct 30 17:55:38 2012
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 5
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Tue Oct 30 17:55:39 2012
+Stopping background process VKTM
+Tue Oct 30 17:55:41 2012
+Instance shutdown complete
+Tue Oct 30 17:55:42 2012
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Tue Oct 30 17:55:44 2012
+PMON started with pid=2, OS id=11176 
+Tue Oct 30 17:55:44 2012
+PSP0 started with pid=3, OS id=11178 
+Tue Oct 30 17:55:45 2012
+VKTM started with pid=4, OS id=11180 
+VKTM running at (100ms) precision 
+Tue Oct 30 17:55:45 2012
+GEN0 started with pid=5, OS id=11184 
+Tue Oct 30 17:55:45 2012
+DIAG started with pid=6, OS id=11186 
+Tue Oct 30 17:55:45 2012
+DBRM started with pid=7, OS id=11188 
+Tue Oct 30 17:55:45 2012
+DIA0 started with pid=8, OS id=11190 
+Tue Oct 30 17:55:45 2012
+MMAN started with pid=9, OS id=11192 
+Tue Oct 30 17:55:45 2012
+DBW0 started with pid=10, OS id=11194 
+Tue Oct 30 17:55:45 2012
+LGWR started with pid=11, OS id=11196 
+Tue Oct 30 17:55:45 2012
+CKPT started with pid=12, OS id=11198 
+Tue Oct 30 17:55:45 2012
+SMON started with pid=13, OS id=11200 
+Tue Oct 30 17:55:45 2012
+RECO started with pid=14, OS id=11202 
+Tue Oct 30 17:55:45 2012
+MMON started with pid=15, OS id=11204 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Tue Oct 30 17:55:45 2012
+MMNL started with pid=16, OS id=11206 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Tue Oct 30 17:55:46 2012
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2581360802
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Tue Oct 30 17:55:50 2012
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 5
+  Current log# 2 seq# 5 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[11252] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:3762514 end:3762644 diff:130 (1 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Tue Oct 30 17:55:52 2012
+QMNC started with pid=20, OS id=11254 
+Tue Oct 30 17:55:54 2012
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Completed: ALTER DATABASE OPEN
+Tue Oct 30 17:55:54 2012
+Starting background process CJQ0
+Tue Oct 30 17:55:54 2012
+CJQ0 started with pid=21, OS id=11268 
+Tue Oct 30 17:56:15 2012
+Starting background process SMCO
+Tue Oct 30 17:56:15 2012
+SMCO started with pid=27, OS id=11358 
+Tue Oct 30 17:57:22 2012
+Thread 1 advanced to log sequence 6 (LGWR switch)
+  Current log# 3 seq# 6 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Tue Oct 30 21:00:09 2012
+Thread 1 advanced to log sequence 7 (LGWR switch)
+  Current log# 1 seq# 7 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Tue Oct 30 22:00:00 2012
+Setting Resource Manager plan SCHEDULER[0x3108]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Tue Oct 30 22:00:00 2012
+Starting background process VKRM
+Tue Oct 30 22:00:00 2012
+VKRM started with pid=32, OS id=29075 
+Tue Oct 30 22:00:05 2012
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Tue Oct 30 22:00:20 2012
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Tue Oct 30 22:00:35 2012
+XDB installed.
+XDB initialized.
+Tue Oct 30 22:02:15 2012
+Thread 1 advanced to log sequence 8 (LGWR switch)
+  Current log# 2 seq# 8 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Wed Oct 31 02:00:00 2012
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Wed Oct 31 04:00:39 2012
+Thread 1 advanced to log sequence 9 (LGWR switch)
+  Current log# 3 seq# 9 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Wed Oct 31 04:15:43 2012
+create undo tablespace undo
+datafile '/app/oracle/oradata/testdb/undo01.dbf' size 5M
+Completed: create undo tablespace undo
+datafile '/app/oracle/oradata/testdb/undo01.dbf' size 5M
+Wed Oct 31 04:18:04 2012
+[18635] Successfully onlined Undo Tablespace 7.
+[18635] **** active transactions found in undo Tablespace 2 - moved to Pending Switch-Out state.
+[18635] active transactions found/affinity dissolution incompletein undo tablespace 2 during switch-out.
+ALTER SYSTEM SET undo_tablespace='UNDO' SCOPE=BOTH;
+Wed Oct 31 04:19:19 2012
+[11200] **** active transactions found in undo Tablespace 2 - moved to Pending Switch-Out state.
+Wed Oct 31 04:24:19 2012
+[11200] Undo Tablespace 2 successfully switched out.
+Wed Oct 31 04:25:49 2012
+drop tablespace undotbs1 
+Completed: drop tablespace undotbs1 
+Wed Oct 31 08:01:42 2012
+Thread 1 cannot allocate new log, sequence 10
+Private strand flush not complete
+  Current log# 3 seq# 9 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thread 1 advanced to log sequence 10 (LGWR switch)
+  Current log# 1 seq# 10 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Wed Oct 31 12:40:55 2012
+Thread 1 cannot allocate new log, sequence 11
+Private strand flush not complete
+  Current log# 1 seq# 10 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Thread 1 advanced to log sequence 11 (LGWR switch)
+  Current log# 2 seq# 11 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Wed Oct 31 17:00:30 2012
+Thread 1 cannot allocate new log, sequence 12
+Private strand flush not complete
+  Current log# 2 seq# 11 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 12 (LGWR switch)
+  Current log# 3 seq# 12 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Wed Oct 31 21:04:19 2012
+Thread 1 cannot allocate new log, sequence 13
+Private strand flush not complete
+  Current log# 3 seq# 12 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thread 1 advanced to log sequence 13 (LGWR switch)
+  Current log# 1 seq# 13 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Wed Oct 31 21:15:29 2012
+
+
+***********************************************************************
+
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 11.2.0.2.0 - Production
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+  Time: 31-OCT-2012 21:15:29
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    
+TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    
+TNS-00505: Operation timed out
+    nt secondary err code: 110
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.192.1)(PORT=61918))
+Wed Oct 31 22:00:00 2012
+Setting Resource Manager plan SCHEDULER[0x3109]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Wed Oct 31 22:00:00 2012
+Starting background process VKRM
+Wed Oct 31 22:00:00 2012
+VKRM started with pid=19, OS id=13949 
+Wed Oct 31 22:00:03 2012
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Wed Oct 31 22:00:16 2012
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Wed Oct 31 22:00:59 2012
+Thread 1 advanced to log sequence 14 (LGWR switch)
+  Current log# 2 seq# 14 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thu Nov 01 00:16:01 2012
+Thread 1 cannot allocate new log, sequence 15
+Private strand flush not complete
+  Current log# 2 seq# 14 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 15 (LGWR switch)
+  Current log# 3 seq# 15 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thu Nov 01 01:19:00 2012
+
+
+***********************************************************************
+
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 11.2.0.2.0 - Production
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+  Time: 01-NOV-2012 01:19:00
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    
+TNS-12535: TNS:operation timed out
+    ns secondary err code: 12606
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.192.1)(PORT=57943))
+WARNING: inbound connection timed out (ORA-3136)
+Thu Nov 01 02:00:00 2012
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Fri Feb 08 06:41:09 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDO"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Fri Feb 08 06:41:16 2013
+PMON started with pid=2, OS id=4013 
+Fri Feb 08 06:41:16 2013
+PSP0 started with pid=3, OS id=4015 
+Fri Feb 08 06:41:16 2013
+VKTM started with pid=4, OS id=4017 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Fri Feb 08 06:41:16 2013
+GEN0 started with pid=5, OS id=4021 
+Fri Feb 08 06:41:16 2013
+DIAG started with pid=6, OS id=4023 
+Fri Feb 08 06:41:16 2013
+DBRM started with pid=7, OS id=4025 
+Fri Feb 08 06:41:16 2013
+DIA0 started with pid=8, OS id=4027 
+Fri Feb 08 06:41:16 2013
+MMAN started with pid=9, OS id=4029 
+Fri Feb 08 06:41:16 2013
+DBW0 started with pid=10, OS id=4031 
+Fri Feb 08 06:41:16 2013
+LGWR started with pid=11, OS id=4033 
+Fri Feb 08 06:41:16 2013
+CKPT started with pid=12, OS id=4035 
+Fri Feb 08 06:41:16 2013
+SMON started with pid=13, OS id=4037 
+Fri Feb 08 06:41:16 2013
+RECO started with pid=14, OS id=4039 
+Fri Feb 08 06:41:16 2013
+MMON started with pid=15, OS id=4041 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Fri Feb 08 06:41:16 2013
+MMNL started with pid=16, OS id=4043 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Fri Feb 08 06:41:17 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2590193549
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Fri Feb 08 06:41:22 2013
+ALTER DATABASE OPEN
+Beginning crash recovery of 1 threads
+Started redo scan
+Completed redo scan
+ read 144 KB redo, 71 data blocks need recovery
+Started redo application at
+ Thread 1: logseq 15, block 71057
+Recovery of Online Redo Log: Thread 1 Group 3 Seq 15 Reading mem 0
+  Mem# 0: /app/oracle/oradata/testdb/redo03.log
+Completed redo application of 0.07MB
+Completed crash recovery at
+ Thread 1: logseq 15, block 71346, scn 1122768
+ 71 data blocks read, 71 data blocks written, 144 redo k-bytes read
+Thread 1 advanced to log sequence 16 (thread open)
+Thread 1 opened at log sequence 16
+  Current log# 1 seq# 16 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[4074] Successfully onlined Undo Tablespace 7.
+Undo initialization finished serial:0 start:68915714 end:68916764 diff:1050 (10 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Fri Feb 08 06:41:27 2013
+QMNC started with pid=20, OS id=4076 
+Completed: ALTER DATABASE OPEN
+Fri Feb 08 06:41:29 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Fri Feb 08 06:41:30 2013
+Starting background process CJQ0
+Fri Feb 08 06:41:30 2013
+CJQ0 started with pid=22, OS id=4090 
+Fri Feb 08 06:46:28 2013
+Starting background process SMCO
+Fri Feb 08 06:46:28 2013
+SMCO started with pid=21, OS id=4173 
+Fri Feb 08 07:11:27 2013
+Thread 1 advanced to log sequence 17 (LGWR switch)
+  Current log# 2 seq# 17 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Fri Feb 08 16:00:02 2013
+Thread 1 advanced to log sequence 18 (LGWR switch)
+  Current log# 3 seq# 18 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Fri Feb 08 22:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310B]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Fri Feb 08 22:00:00 2013
+Starting background process VKRM
+Fri Feb 08 22:00:00 2013
+VKRM started with pid=19, OS id=12437 
+Fri Feb 08 22:00:02 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Fri Feb 08 22:00:13 2013
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Fri Feb 08 22:00:23 2013
+Thread 1 advanced to log sequence 19 (LGWR switch)
+  Current log# 1 seq# 19 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Sat Feb 09 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Sat Feb 09 02:47:08 2013
+Thread 1 advanced to log sequence 20 (LGWR switch)
+  Current log# 2 seq# 20 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sat Feb 09 06:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310C]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Sat Feb 09 06:00:00 2013
+Starting background process VKRM
+Sat Feb 09 06:00:00 2013
+VKRM started with pid=26, OS id=17248 
+Sat Feb 09 06:00:02 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Sat Feb 09 07:00:03 2013
+Thread 1 advanced to log sequence 21 (LGWR switch)
+  Current log# 3 seq# 21 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sat Feb 09 10:03:30 2013
+Thread 1 advanced to log sequence 22 (LGWR switch)
+  Current log# 1 seq# 22 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Sat Feb 09 15:00:11 2013
+Thread 1 advanced to log sequence 23 (LGWR switch)
+  Current log# 2 seq# 23 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sat Feb 09 20:25:01 2013
+
+
+***********************************************************************
+
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 11.2.0.2.0 - Production
+	Oracle Bequeath NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 11.2.0.2.0 - Production
+  Time: 09-FEB-2013 20:25:01
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    
+TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    
+TNS-00505: Operation timed out
+    nt secondary err code: 110
+    nt OS err code: 0
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=192.168.192.1)(PORT=54701))
+Sat Feb 09 22:04:20 2013
+Thread 1 cannot allocate new log, sequence 24
+Private strand flush not complete
+  Current log# 2 seq# 23 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 24 (LGWR switch)
+  Current log# 3 seq# 24 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sun Feb 10 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Sun Feb 10 06:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310D]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Sun Feb 10 06:00:00 2013
+Starting background process VKRM
+Sun Feb 10 06:00:00 2013
+VKRM started with pid=26, OS id=22856 
+Sun Feb 10 06:00:03 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Sun Feb 10 06:00:16 2013
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Sun Feb 10 06:00:17 2013
+Thread 1 cannot allocate new log, sequence 25
+Private strand flush not complete
+  Current log# 3 seq# 24 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thread 1 advanced to log sequence 25 (LGWR switch)
+  Current log# 1 seq# 25 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Sun Feb 10 07:14:47 2013
+Thread 1 advanced to log sequence 26 (LGWR switch)
+  Current log# 2 seq# 26 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sun Feb 10 13:17:33 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Sun Feb 10 13:17:35 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 12
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Sun Feb 10 13:17:39 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Sun Feb 10 13:17:41 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 26
+Successful close of redo thread 1
+Sun Feb 10 13:17:44 2013
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Feb 10 13:17:46 2013
+Stopping background process VKTM
+Sun Feb 10 13:17:53 2013
+Instance shutdown complete
+Mon Feb 11 02:23:00 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDO"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Mon Feb 11 02:23:06 2013
+PMON started with pid=2, OS id=4694 
+Mon Feb 11 02:23:06 2013
+PSP0 started with pid=3, OS id=4696 
+Mon Feb 11 02:23:07 2013
+VKTM started with pid=4, OS id=4698 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Mon Feb 11 02:23:07 2013
+GEN0 started with pid=5, OS id=4702 
+Mon Feb 11 02:23:07 2013
+DIAG started with pid=6, OS id=4704 
+Mon Feb 11 02:23:07 2013
+DBRM started with pid=7, OS id=4706 
+Mon Feb 11 02:23:07 2013
+DIA0 started with pid=8, OS id=4708 
+Mon Feb 11 02:23:07 2013
+MMAN started with pid=9, OS id=4710 
+Mon Feb 11 02:23:08 2013
+DBW0 started with pid=10, OS id=4712 
+Mon Feb 11 02:23:08 2013
+LGWR started with pid=11, OS id=4714 
+Mon Feb 11 02:23:08 2013
+CKPT started with pid=12, OS id=4716 
+Mon Feb 11 02:23:08 2013
+SMON started with pid=13, OS id=4718 
+Mon Feb 11 02:23:08 2013
+RECO started with pid=14, OS id=4720 
+Mon Feb 11 02:23:08 2013
+MMON started with pid=15, OS id=4722 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Mon Feb 11 02:23:08 2013
+MMNL started with pid=16, OS id=4724 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Mon Feb 11 02:23:09 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2590339470
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Mon Feb 11 02:23:14 2013
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 26
+  Current log# 2 seq# 26 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[4755] Successfully onlined Undo Tablespace 7.
+Undo initialization finished serial:0 start:17624784 end:17625234 diff:450 (4 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Mon Feb 11 02:23:18 2013
+QMNC started with pid=20, OS id=4757 
+Completed: ALTER DATABASE OPEN
+Mon Feb 11 02:23:21 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Mon Feb 11 02:23:21 2013
+Starting background process CJQ0
+Mon Feb 11 02:23:21 2013
+CJQ0 started with pid=21, OS id=4773 
+Mon Feb 11 02:28:20 2013
+Starting background process SMCO
+Mon Feb 11 02:28:20 2013
+SMCO started with pid=19, OS id=4821 
+Mon Feb 11 03:36:43 2013
+create undo tablespace undotbs1
+datafile '/app/oracle/oradata/testdb/undotbs01.dbf' size 10M
+ORA-1119 signalled during: create undo tablespace undotbs1
+datafile '/app/oracle/oradata/testdb/undotbs01.dbf' size 10M...
+Mon Feb 11 03:37:06 2013
+create undo tablespace undotbs1
+datafile '/app/oracle/oradata/testdb/undotbs01.dbf' size 10M
+Completed: create undo tablespace undotbs1
+datafile '/app/oracle/oradata/testdb/undotbs01.dbf' size 10M
+Mon Feb 11 03:37:19 2013
+[5468] Successfully onlined Undo Tablespace 2.
+[5468] Undo Tablespace 7 successfully switched out.
+ALTER SYSTEM SET undo_tablespace='UNDOTBS1' SCOPE=BOTH;
+Mon Feb 11 03:37:34 2013
+drop tablespace undo
+Completed: drop tablespace undo
+Mon Feb 11 03:40:53 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Mon Feb 11 03:40:54 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 7
+Waiting for shared server 'S000' to die
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Mon Feb 11 03:41:02 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Mon Feb 11 03:41:02 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 26
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Mon Feb 11 03:41:02 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Mon Feb 11 03:41:04 2013
+Instance shutdown complete
+Wed Mar 27 08:34:02 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Wed Mar 27 08:34:03 2013
+PMON started with pid=2, OS id=31973 
+Wed Mar 27 08:34:03 2013
+PSP0 started with pid=3, OS id=31975 
+Wed Mar 27 08:34:03 2013
+VKTM started with pid=4, OS id=31977 at elevated priority
+Wed Mar 27 08:34:03 2013
+GEN0 started with pid=5, OS id=31981 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Wed Mar 27 08:34:04 2013
+DIAG started with pid=6, OS id=31983 
+Wed Mar 27 08:34:04 2013
+DBRM started with pid=7, OS id=31985 
+Wed Mar 27 08:34:04 2013
+DIA0 started with pid=8, OS id=31987 
+Wed Mar 27 08:34:04 2013
+MMAN started with pid=9, OS id=31989 
+Wed Mar 27 08:34:04 2013
+DBW0 started with pid=10, OS id=31991 
+Wed Mar 27 08:34:04 2013
+LGWR started with pid=11, OS id=31993 
+Wed Mar 27 08:34:04 2013
+CKPT started with pid=12, OS id=31995 
+Wed Mar 27 08:34:04 2013
+SMON started with pid=13, OS id=31997 
+Wed Mar 27 08:34:04 2013
+RECO started with pid=14, OS id=31999 
+Wed Mar 27 08:34:04 2013
+MMON started with pid=15, OS id=32001 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Wed Mar 27 08:34:04 2013
+MMNL started with pid=16, OS id=32003 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Wed Mar 27 08:34:04 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594530300
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Wed Mar 27 08:34:08 2013
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 26
+  Current log# 2 seq# 26 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[32034] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:7213794 end:7213904 diff:110 (1 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Wed Mar 27 08:34:09 2013
+QMNC started with pid=20, OS id=32036 
+Wed Mar 27 08:34:10 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Completed: ALTER DATABASE OPEN
+Starting background process CJQ0
+Wed Mar 27 08:34:10 2013
+CJQ0 started with pid=24, OS id=32050 
+Wed Mar 27 08:39:09 2013
+Starting background process SMCO
+Wed Mar 27 08:39:09 2013
+SMCO started with pid=21, OS id=32095 
+Wed Mar 27 09:04:10 2013
+Thread 1 advanced to log sequence 27 (LGWR switch)
+  Current log# 3 seq# 27 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thread 1 advanced to log sequence 28 (LGWR switch)
+  Current log# 1 seq# 28 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Wed Mar 27 11:26:31 2013
+Thread 1 advanced to log sequence 29 (LGWR switch)
+  Current log# 2 seq# 29 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Wed Mar 27 22:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x3109]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Wed Mar 27 22:00:00 2013
+Starting background process VKRM
+Wed Mar 27 22:00:00 2013
+VKRM started with pid=22, OS id=7955 
+Wed Mar 27 22:00:05 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Wed Mar 27 22:00:25 2013
+Thread 1 cannot allocate new log, sequence 30
+Private strand flush not complete
+  Current log# 2 seq# 29 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 30 (LGWR switch)
+  Current log# 3 seq# 30 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thu Mar 28 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Thu Mar 28 08:00:52 2013
+Thread 1 advanced to log sequence 31 (LGWR switch)
+  Current log# 1 seq# 31 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Thu Mar 28 22:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310A]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Thu Mar 28 22:00:00 2013
+Starting background process VKRM
+Thu Mar 28 22:00:00 2013
+VKRM started with pid=26, OS id=22042 
+Thu Mar 28 22:00:02 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Thu Mar 28 22:00:13 2013
+Thread 1 cannot allocate new log, sequence 32
+Private strand flush not complete
+  Current log# 1 seq# 31 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Thread 1 advanced to log sequence 32 (LGWR switch)
+  Current log# 2 seq# 32 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thu Mar 28 22:05:19 2013
+Thread 1 advanced to log sequence 33 (LGWR switch)
+  Current log# 3 seq# 33 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Fri Mar 29 01:00:23 2013
+Thread 1 advanced to log sequence 34 (LGWR switch)
+  Current log# 1 seq# 34 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Fri Mar 29 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Fri Mar 29 15:53:20 2013
+Thread 1 advanced to log sequence 35 (LGWR switch)
+  Current log# 2 seq# 35 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Fri Mar 29 22:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310B]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Fri Mar 29 22:00:00 2013
+Starting background process VKRM
+Fri Mar 29 22:00:00 2013
+VKRM started with pid=25, OS id=3149 
+Fri Mar 29 22:00:01 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Fri Mar 29 22:00:19 2013
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Fri Mar 29 22:00:40 2013
+Thread 1 cannot allocate new log, sequence 36
+Private strand flush not complete
+  Current log# 2 seq# 35 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 36 (LGWR switch)
+  Current log# 3 seq# 36 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Fri Mar 29 22:06:11 2013
+Thread 1 advanced to log sequence 37 (LGWR switch)
+  Current log# 1 seq# 37 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Sat Mar 30 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Sat Mar 30 05:59:52 2013
+create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 5M
+Completed: create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 5M
+Sat Mar 30 06:00:00 2013
+Setting Resource Manager plan SCHEDULER[0x310C]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Sat Mar 30 06:00:00 2013
+Starting background process VKRM
+Sat Mar 30 06:00:00 2013
+VKRM started with pid=26, OS id=8434 
+Sat Mar 30 06:00:02 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Sat Mar 30 06:00:19 2013
+alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test02.dbf' size 10M
+Completed: alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test02.dbf' size 10M
+Sat Mar 30 06:00:20 2013
+Thread 1 advanced to log sequence 38 (LGWR switch)
+  Current log# 2 seq# 38 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sat Mar 30 06:00:36 2013
+alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test02.dbf'
+Deleted file /app/oracle/oradata/testdb/test02.dbf
+Completed: alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test02.dbf'
+Sat Mar 30 06:01:51 2013
+alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test03.dbf' size 10M
+Completed: alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test03.dbf' size 10M
+alter tablespace test offline
+Completed: alter tablespace test offline
+Sat Mar 30 06:02:16 2013
+alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test03.dbf' 
+ORA-3264 signalled during: alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test03.dbf' ...
+Sat Mar 30 06:02:16 2013
+Checker run found 3 new persistent data failures
+alter tablespace test online
+Completed: alter tablespace test online
+Sat Mar 30 06:02:31 2013
+alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test03.dbf' 
+Deleted file /app/oracle/oradata/testdb/test03.dbf
+Completed: alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test03.dbf' 
+Sat Mar 30 06:03:49 2013
+alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test04.dbf' size 5M
+Completed: alter tablespace test
+add datafile '/app/oracle/oradata/testdb/test04.dbf' size 5M
+Sat Mar 30 06:05:42 2013
+Thread 1 cannot allocate new log, sequence 39
+Private strand flush not complete
+  Current log# 2 seq# 38 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thread 1 advanced to log sequence 39 (LGWR switch)
+  Current log# 3 seq# 39 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sat Mar 30 06:06:27 2013
+alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test04.dbf'
+ORA-3262 signalled during: alter tablespace test
+drop datafile '/app/oracle/oradata/testdb/test04.dbf'...
+Sat Mar 30 14:06:48 2013
+Thread 1 advanced to log sequence 40 (LGWR switch)
+  Current log# 1 seq# 40 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Sat Mar 30 21:00:53 2013
+Thread 1 advanced to log sequence 41 (LGWR switch)
+  Current log# 2 seq# 41 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sat Mar 30 22:06:59 2013
+DBMS_STATS: GATHER_STATS_JOB encountered errors.  Check the trace file.
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_j000_17644.trc:
+ORA-00604: error occurred at recursive SQL level 2
+ORA-30036: unable to extend segment by 8 in undo tablespace 'UNDOTBS1'
+Sat Mar 30 22:07:07 2013
+Thread 1 advanced to log sequence 42 (LGWR switch)
+  Current log# 3 seq# 42 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sun Mar 31 02:00:00 2013
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager plan via parameter
+Sun Mar 31 04:01:06 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Sun Mar 31 04:01:07 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 9
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Sun Mar 31 04:01:10 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Sun Mar 31 04:01:10 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 42
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Mar 31 04:01:12 2013
+Stopping background process VKTM
+Sun Mar 31 04:01:14 2013
+Instance shutdown complete
+Sun Mar 31 04:02:14 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 04:02:15 2013
+PMON started with pid=2, OS id=21681 
+Sun Mar 31 04:02:15 2013
+PSP0 started with pid=3, OS id=21683 
+Sun Mar 31 04:02:15 2013
+VKTM started with pid=4, OS id=21685 at elevated priority
+Sun Mar 31 04:02:15 2013
+GEN0 started with pid=5, OS id=21689 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 04:02:15 2013
+DIAG started with pid=6, OS id=21691 
+Sun Mar 31 04:02:15 2013
+DBRM started with pid=7, OS id=21693 
+Sun Mar 31 04:02:15 2013
+DIA0 started with pid=8, OS id=21695 
+Sun Mar 31 04:02:15 2013
+MMAN started with pid=9, OS id=21697 
+Sun Mar 31 04:02:15 2013
+DBW0 started with pid=10, OS id=21699 
+Sun Mar 31 04:02:15 2013
+LGWR started with pid=11, OS id=21701 
+Sun Mar 31 04:02:15 2013
+CKPT started with pid=12, OS id=21703 
+Sun Mar 31 04:02:15 2013
+SMON started with pid=13, OS id=21705 
+Sun Mar 31 04:02:16 2013
+RECO started with pid=14, OS id=21707 
+Sun Mar 31 04:02:16 2013
+MMON started with pid=15, OS id=21709 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 04:02:16 2013
+MMNL started with pid=16, OS id=21711 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 04:02:16 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594852168
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 04:17:19 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Sun Mar 31 04:21:09 2013
+Shutting down instance (abort)
+License high water mark = 1
+USER (ospid: 21742): terminating the instance
+Instance terminated by USER, pid = 21742
+Sun Mar 31 04:21:10 2013
+Instance shutdown complete
+Sun Mar 31 04:21:21 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 04:21:22 2013
+PMON started with pid=2, OS id=21961 
+Sun Mar 31 04:21:22 2013
+PSP0 started with pid=3, OS id=21963 
+Sun Mar 31 04:21:22 2013
+VKTM started with pid=4, OS id=21965 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 04:21:22 2013
+GEN0 started with pid=5, OS id=21969 
+Sun Mar 31 04:21:22 2013
+DIAG started with pid=6, OS id=21971 
+Sun Mar 31 04:21:22 2013
+DBRM started with pid=7, OS id=21973 
+Sun Mar 31 04:21:22 2013
+DIA0 started with pid=8, OS id=21975 
+Sun Mar 31 04:21:22 2013
+MMAN started with pid=9, OS id=21977 
+Sun Mar 31 04:21:22 2013
+DBW0 started with pid=10, OS id=21979 
+Sun Mar 31 04:21:22 2013
+LGWR started with pid=11, OS id=21981 
+Sun Mar 31 04:21:22 2013
+CKPT started with pid=12, OS id=21983 
+Sun Mar 31 04:21:22 2013
+SMON started with pid=13, OS id=21985 
+Sun Mar 31 04:21:22 2013
+RECO started with pid=14, OS id=21987 
+Sun Mar 31 04:21:22 2013
+MMON started with pid=15, OS id=21989 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 04:21:22 2013
+MMNL started with pid=16, OS id=21991 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 04:21:22 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594795714
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 04:21:26 2013
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 42
+  Current log# 3 seq# 42 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[22022] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:337626464 end:337626514 diff:50 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Sun Mar 31 04:21:27 2013
+QMNC started with pid=20, OS id=22024 
+Completed: ALTER DATABASE OPEN
+Starting background process CJQ0
+Sun Mar 31 04:21:28 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Sun Mar 31 04:21:28 2013
+CJQ0 started with pid=27, OS id=22038 
+Sun Mar 31 04:21:46 2013
+Shutting down instance (abort)
+License high water mark = 4
+USER (ospid: 22022): terminating the instance
+Instance terminated by USER, pid = 22022
+Sun Mar 31 04:21:47 2013
+Instance shutdown complete
+Sun Mar 31 04:22:21 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 04:22:21 2013
+PMON started with pid=2, OS id=7839 
+Sun Mar 31 04:22:21 2013
+PSP0 started with pid=3, OS id=7843 
+Sun Mar 31 04:22:21 2013
+VKTM started with pid=4, OS id=7847 at elevated priority
+Sun Mar 31 04:22:21 2013
+GEN0 started with pid=5, OS id=7851 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 04:22:21 2013
+DIAG started with pid=6, OS id=7853 
+Sun Mar 31 04:22:21 2013
+DBRM started with pid=7, OS id=7855 
+Sun Mar 31 04:22:21 2013
+DIA0 started with pid=8, OS id=7857 
+Sun Mar 31 04:22:21 2013
+MMAN started with pid=9, OS id=7863 
+Sun Mar 31 04:22:21 2013
+DBW0 started with pid=10, OS id=7877 
+Sun Mar 31 04:22:21 2013
+LGWR started with pid=11, OS id=7891 
+Sun Mar 31 04:22:21 2013
+CKPT started with pid=12, OS id=7923 
+Sun Mar 31 04:22:21 2013
+SMON started with pid=13, OS id=7931 
+Sun Mar 31 04:22:21 2013
+RECO started with pid=14, OS id=7961 
+Sun Mar 31 04:22:21 2013
+MMON started with pid=15, OS id=7969 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 04:22:21 2013
+MMNL started with pid=16, OS id=7975 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 04:22:21 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594846974
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 04:37:25 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Sun Mar 31 07:22:53 2013
+alter database open
+Beginning crash recovery of 1 threads
+Started redo scan
+Completed redo scan
+ read 159 KB redo, 60 data blocks need recovery
+Started redo application at
+ Thread 1: logseq 42, block 52582
+Recovery of Online Redo Log: Thread 1 Group 3 Seq 42 Reading mem 0
+  Mem# 0: /app/oracle/oradata/testdb/redo03.log
+Completed redo application of 0.13MB
+Completed crash recovery at
+ Thread 1: logseq 42, block 52901, scn 1699389
+ 60 data blocks read, 60 data blocks written, 159 redo k-bytes read
+Sun Mar 31 07:22:53 2013
+Thread 1 advanced to log sequence 43 (thread open)
+Thread 1 opened at log sequence 43
+  Current log# 1 seq# 43 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Sun Mar 31 07:22:53 2013
+SMON: enabling cache recovery
+[12622] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:348512504 end:348512564 diff:60 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Completed: alter database open
+Sun Mar 31 07:22:54 2013
+QMNC started with pid=20, OS id=14979 
+Sun Mar 31 07:22:54 2013
+Starting background process CJQ0
+Sun Mar 31 07:22:54 2013
+CJQ0 started with pid=22, OS id=14993 
+Setting Resource Manager plan SCHEDULER[0x310D]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Sun Mar 31 07:22:57 2013
+Starting background process VKRM
+Sun Mar 31 07:22:57 2013
+VKRM started with pid=21, OS id=14995 
+Sun Mar 31 07:23:01 2013
+Begin automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+End automatic SQL Tuning Advisor run for special tuning task  "SYS_AUTO_SQL_TUNING_TASK"
+Sun Mar 31 07:23:18 2013
+Starting background process SMCO
+Sun Mar 31 07:23:18 2013
+SMCO started with pid=33, OS id=15021 
+Sun Mar 31 07:28:20 2013
+ALTER SYSTEM SET log_archive_dest_1='location=/data/arc1' SCOPE=SPFILE;
+Sun Mar 31 07:28:43 2013
+ALTER SYSTEM SET log_archive_dest_2='location=/data/arc2' SCOPE=SPFILE;
+Sun Mar 31 07:29:33 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Sun Mar 31 07:29:33 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 7
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Sun Mar 31 07:29:35 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Sun Mar 31 07:29:35 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 43
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Sun Mar 31 07:29:36 2013
+Stopping background process VKTM
+Archiving is disabled
+Sun Mar 31 07:29:38 2013
+Instance shutdown complete
+Sun Mar 31 07:32:45 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 07:32:46 2013
+PMON started with pid=2, OS id=15175 
+Sun Mar 31 07:32:46 2013
+PSP0 started with pid=3, OS id=15177 
+Sun Mar 31 07:32:46 2013
+VKTM started with pid=4, OS id=15179 at elevated priority
+Sun Mar 31 07:32:46 2013
+GEN0 started with pid=5, OS id=15183 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 07:32:46 2013
+DIAG started with pid=6, OS id=15185 
+Sun Mar 31 07:32:46 2013
+DBRM started with pid=7, OS id=15187 
+Sun Mar 31 07:32:46 2013
+DIA0 started with pid=8, OS id=15189 
+Sun Mar 31 07:32:46 2013
+MMAN started with pid=9, OS id=15191 
+Sun Mar 31 07:32:46 2013
+DBW0 started with pid=10, OS id=15193 
+Sun Mar 31 07:32:46 2013
+LGWR started with pid=11, OS id=15195 
+Sun Mar 31 07:32:46 2013
+CKPT started with pid=12, OS id=15197 
+Sun Mar 31 07:32:46 2013
+SMON started with pid=13, OS id=15199 
+Sun Mar 31 07:32:46 2013
+RECO started with pid=14, OS id=15201 
+Sun Mar 31 07:32:46 2013
+MMON started with pid=15, OS id=15203 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 07:32:46 2013
+MMNL started with pid=16, OS id=15205 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 07:32:47 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594816671
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 07:32:51 2013
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 43
+  Current log# 1 seq# 43 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[15236] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:349110234 end:349110264 diff:30 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Sun Mar 31 07:32:51 2013
+QMNC started with pid=20, OS id=15238 
+Sun Mar 31 07:32:51 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Starting background process CJQ0
+Sun Mar 31 07:32:52 2013
+CJQ0 started with pid=21, OS id=15252 
+Completed: ALTER DATABASE OPEN
+Setting Resource Manager plan SCHEDULER[0x310D]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Starting background process VKRM
+Sun Mar 31 07:32:55 2013
+VKRM started with pid=22, OS id=15254 
+Sun Mar 31 07:34:17 2013
+ALTER SYSTEM SET log_archive_format='%s_%t_%r.arc' SCOPE=SPFILE;
+Sun Mar 31 07:34:35 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Sun Mar 31 07:34:36 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 3
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Sun Mar 31 07:34:39 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Sun Mar 31 07:34:39 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 43
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Mar 31 07:34:39 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Mar 31 07:34:41 2013
+Instance shutdown complete
+Sun Mar 31 07:35:09 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 07:35:09 2013
+PMON started with pid=2, OS id=15349 
+Sun Mar 31 07:35:09 2013
+PSP0 started with pid=3, OS id=15351 
+Sun Mar 31 07:35:09 2013
+VKTM started with pid=4, OS id=15353 at elevated priority
+Sun Mar 31 07:35:09 2013
+GEN0 started with pid=5, OS id=15357 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 07:35:09 2013
+DIAG started with pid=6, OS id=15359 
+Sun Mar 31 07:35:09 2013
+DBRM started with pid=7, OS id=15361 
+Sun Mar 31 07:35:09 2013
+DIA0 started with pid=8, OS id=15363 
+Sun Mar 31 07:35:09 2013
+MMAN started with pid=9, OS id=15365 
+Sun Mar 31 07:35:09 2013
+DBW0 started with pid=10, OS id=15367 
+Sun Mar 31 07:35:09 2013
+LGWR started with pid=11, OS id=15369 
+Sun Mar 31 07:35:09 2013
+CKPT started with pid=12, OS id=15371 
+Sun Mar 31 07:35:09 2013
+SMON started with pid=13, OS id=15373 
+Sun Mar 31 07:35:09 2013
+RECO started with pid=14, OS id=15375 
+Sun Mar 31 07:35:09 2013
+MMON started with pid=15, OS id=15377 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 07:35:10 2013
+MMNL started with pid=16, OS id=15379 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 07:35:10 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594824238
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 07:35:14 2013
+ALTER DATABASE OPEN
+Thread 1 opened at log sequence 43
+  Current log# 1 seq# 43 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+[15410] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:349253214 end:349253264 diff:50 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Sun Mar 31 07:35:14 2013
+QMNC started with pid=20, OS id=15412 
+Sun Mar 31 07:35:14 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Completed: ALTER DATABASE OPEN
+Starting background process CJQ0
+Sun Mar 31 07:35:15 2013
+CJQ0 started with pid=24, OS id=15426 
+Setting Resource Manager plan SCHEDULER[0x310D]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Starting background process VKRM
+Sun Mar 31 07:35:18 2013
+VKRM started with pid=21, OS id=15428 
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+Sun Mar 31 07:35:24 2013
+License high water mark = 3
+Stopping Job queue slave processes, flags = 7
+Job queue slave processes stopped
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Sun Mar 31 07:35:24 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Sun Mar 31 07:35:24 2013
+Shutting down archive processes
+Archiving is disabled
+Archive process shutdown avoided: 0 active
+Thread 1 closed at log sequence 43
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Mar 31 07:35:24 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Sun Mar 31 07:35:27 2013
+Instance shutdown complete
+Sun Mar 31 07:35:31 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Sun Mar 31 07:35:31 2013
+PMON started with pid=2, OS id=15480 
+Sun Mar 31 07:35:31 2013
+PSP0 started with pid=3, OS id=15482 
+Sun Mar 31 07:35:31 2013
+VKTM started with pid=4, OS id=15484 at elevated priority
+Sun Mar 31 07:35:31 2013
+GEN0 started with pid=5, OS id=15488 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Sun Mar 31 07:35:31 2013
+DIAG started with pid=6, OS id=15490 
+Sun Mar 31 07:35:31 2013
+DBRM started with pid=7, OS id=15492 
+Sun Mar 31 07:35:31 2013
+DIA0 started with pid=8, OS id=15494 
+Sun Mar 31 07:35:31 2013
+MMAN started with pid=9, OS id=15496 
+Sun Mar 31 07:35:31 2013
+DBW0 started with pid=10, OS id=15498 
+Sun Mar 31 07:35:31 2013
+LGWR started with pid=11, OS id=15500 
+Sun Mar 31 07:35:31 2013
+CKPT started with pid=12, OS id=15502 
+Sun Mar 31 07:35:31 2013
+SMON started with pid=13, OS id=15504 
+Sun Mar 31 07:35:31 2013
+RECO started with pid=14, OS id=15506 
+Sun Mar 31 07:35:31 2013
+MMON started with pid=15, OS id=15508 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Sun Mar 31 07:35:31 2013
+MMNL started with pid=16, OS id=15510 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Sun Mar 31 07:35:31 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2594806851
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Sun Mar 31 07:37:00 2013
+alter database archivelog
+Completed: alter database archivelog
+alter database open
+Sun Mar 31 07:37:06 2013
+LGWR: STARTING ARCH PROCESSES
+Sun Mar 31 07:37:06 2013
+ARC0 started with pid=20, OS id=15547 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thread 1 opened at log sequence 43
+  Current log# 1 seq# 43 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Sun Mar 31 07:37:07 2013
+SMON: enabling cache recovery
+[15543] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:349366704 end:349366754 diff:50 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Sun Mar 31 07:37:08 2013
+QMNC started with pid=22, OS id=15551 
+Sun Mar 31 07:37:08 2013
+ARC1 started with pid=21, OS id=15549 
+Completed: alter database open
+ARC1: Archival started
+Sun Mar 31 07:37:08 2013
+ARC3 started with pid=25, OS id=15557 
+Sun Mar 31 07:37:08 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+Sun Mar 31 07:37:08 2013
+ARC2 started with pid=23, OS id=15553 
+Sun Mar 31 07:37:08 2013
+Starting background process CJQ0
+Sun Mar 31 07:37:08 2013
+CJQ0 started with pid=24, OS id=15569 
+ARC2: Archival started
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+ARC0: Becoming the heartbeat ARCH
+Setting Resource Manager plan SCHEDULER[0x310D]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+Sun Mar 31 07:37:11 2013
+Starting background process VKRM
+Sun Mar 31 07:37:11 2013
+VKRM started with pid=26, OS id=15571 
+Thread 1 advanced to log sequence 44 (LGWR switch)
+  Current log# 2 seq# 44 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Archived Log entry 1 added for thread 1 sequence 43 ID 0x99dd5a91 dest 1:
+Archived Log entry 2 added for thread 1 sequence 43 ID 0x99dd5a91 dest 2:
+Thread 1 advanced to log sequence 45 (LGWR switch)
+  Current log# 3 seq# 45 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Archived Log entry 3 added for thread 1 sequence 44 ID 0x99dd5a91 dest 1:
+Archived Log entry 4 added for thread 1 sequence 44 ID 0x99dd5a91 dest 2:
+Thread 1 cannot allocate new log, sequence 46
+Checkpoint not complete
+  Current log# 3 seq# 45 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thread 1 advanced to log sequence 46 (LGWR switch)
+  Current log# 1 seq# 46 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Archived Log entry 5 added for thread 1 sequence 45 ID 0x99dd5a91 dest 1:
+Archived Log entry 6 added for thread 1 sequence 45 ID 0x99dd5a91 dest 2:
+Sun Mar 31 07:47:08 2013
+Starting background process SMCO
+Sun Mar 31 07:47:08 2013
+SMCO started with pid=28, OS id=15668 
+Sun Mar 31 07:51:59 2013
+Thread 1 advanced to log sequence 47 (LGWR switch)
+  Current log# 2 seq# 47 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sun Mar 31 07:51:59 2013
+ARC1: Error 19504 Creating archive log file to '/data/arc2/46_1_798054423.arc'
+ARC1: Error 19504 Creating archive log file to '/data/arc1/46_1_798054423.arc'
+ARCH: Archival stopped, error occurred. Will continue retrying
+ORACLE Instance testdb - Archival Error
+ORA-16038: log 1 sequence# 46 cannot be archived
+ORA-19504: failed to create file ""
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Thread 1 advanced to log sequence 48 (LGWR switch)
+  Current log# 3 seq# 48 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sun Mar 31 07:52:00 2013
+ARCH: Archival stopped, error occurred. Will continue retrying
+ORACLE Instance testdb - Archival Error
+ORA-16014: log 1 sequence# 46 not archived, no available destinations
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Thread 1 cannot allocate new log, sequence 49
+Checkpoint not complete
+  Current log# 3 seq# 48 mem# 0: /app/oracle/oradata/testdb/redo03.log
+ORACLE Instance testdb - Can not allocate log, archival required
+Thread 1 cannot allocate new log, sequence 49
+All online logs needed archiving
+  Current log# 3 seq# 48 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Sun Mar 31 07:57:06 2013
+ARC3: Error 19504 Creating archive log file to '/data/arc2/46_1_798054423.arc'
+ARC3: Error 19504 Creating archive log file to '/data/arc1/46_1_798054423.arc'
+ARCH: Archival stopped, error occurred. Will continue retrying
+ORACLE Instance testdb - Archival Error
+ORA-16038: log 1 sequence# 46 cannot be archived
+ORA-19504: failed to create file ""
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Sun Mar 31 07:57:08 2013
+ARCH: Archival stopped, error occurred. Will continue retrying
+ORACLE Instance testdb - Archival Error
+ORA-16014: log 1 sequence# 46 not archived, no available destinations
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Sun Mar 31 08:02:08 2013
+Archived Log entry 7 added for thread 1 sequence 46 ID 0x99dd5a91 dest 1:
+Archived Log entry 8 added for thread 1 sequence 46 ID 0x99dd5a91 dest 2:
+krse_arc_driver_core: Successful archiving of previously failed ORL
+Archiver process freed from errors. No longer stopped
+Sun Mar 31 08:02:08 2013
+Thread 1 advanced to log sequence 49 (LGWR switch)
+  Current log# 1 seq# 49 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Archived Log entry 9 added for thread 1 sequence 47 ID 0x99dd5a91 dest 1:
+Archived Log entry 10 added for thread 1 sequence 47 ID 0x99dd5a91 dest 2:
+Sun Mar 31 08:02:08 2013
+Archived Log entry 11 added for thread 1 sequence 48 ID 0x99dd5a91 dest 1:
+Archived Log entry 12 added for thread 1 sequence 48 ID 0x99dd5a91 dest 2:
+Sun Mar 31 08:08:19 2013
+Thread 1 advanced to log sequence 50 (LGWR switch)
+  Current log# 2 seq# 50 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Sun Mar 31 08:08:19 2013
+Archived Log entry 13 added for thread 1 sequence 49 ID 0x99dd5a91 dest 1:
+Archived Log entry 14 added for thread 1 sequence 49 ID 0x99dd5a91 dest 2:
+Sun Mar 31 10:44:31 2013
+create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 10M
+ORA-1543 signalled during: create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 10M...
+Sun Mar 31 10:44:43 2013
+drop tablespace test including contents and datafiles
+Deleted file /app/oracle/oradata/testdb/test01.dbf
+Deleted file /app/oracle/oradata/testdb/test04.dbf
+Completed: drop tablespace test including contents and datafiles
+create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 10M
+Completed: create tablespace test
+datafile '/app/oracle/oradata/testdb/test01.dbf' size 10M
+Sun Mar 31 11:02:03 2013
+alter tablespace test begin backup
+Completed: alter tablespace test begin backup
+Sun Mar 31 11:02:13 2013
+alter tablespace test end backup
+Completed: alter tablespace test end backup
+alter tablespace users begin backup
+Completed: alter tablespace users begin backup
+Thu Aug 08 07:23:23 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 07:23:24 2013
+PMON started with pid=2, OS id=3471 
+Thu Aug 08 07:23:24 2013
+PSP0 started with pid=3, OS id=3473 
+Thu Aug 08 07:23:24 2013
+VKTM started with pid=4, OS id=3475 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 07:23:24 2013
+GEN0 started with pid=5, OS id=3479 
+Thu Aug 08 07:23:24 2013
+DIAG started with pid=6, OS id=3481 
+Thu Aug 08 07:23:24 2013
+DBRM started with pid=7, OS id=3483 
+Thu Aug 08 07:23:24 2013
+DIA0 started with pid=8, OS id=3485 
+Thu Aug 08 07:23:24 2013
+MMAN started with pid=9, OS id=3487 
+Thu Aug 08 07:23:24 2013
+DBW0 started with pid=10, OS id=3489 
+Thu Aug 08 07:23:24 2013
+LGWR started with pid=11, OS id=3491 
+Thu Aug 08 07:23:25 2013
+CKPT started with pid=12, OS id=3493 
+Thu Aug 08 07:23:25 2013
+SMON started with pid=13, OS id=3495 
+Thu Aug 08 07:23:25 2013
+RECO started with pid=14, OS id=3497 
+Thu Aug 08 07:23:25 2013
+MMON started with pid=15, OS id=3499 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 07:23:25 2013
+MMNL started with pid=16, OS id=3501 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 07:23:25 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606227821
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 07:23:29 2013
+ALTER DATABASE OPEN
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_3529.trc:
+ORA-10873: file 4 needs to be either taken out of backup mode or media recovered
+ORA-01110: data file 4: '/app/oracle/oradata/testdb/users01.dbf'
+ORA-10873 signalled during: ALTER DATABASE OPEN...
+Thu Aug 08 07:23:29 2013
+Checker run found 1 new persistent data failures
+Thu Aug 08 07:24:00 2013
+alter database datafile '/app/oracle/oradata/testdb/users01.dbf'
+end backup
+Completed: alter database datafile '/app/oracle/oradata/testdb/users01.dbf'
+end backup
+alter database open
+Beginning crash recovery of 1 threads
+Started redo scan
+Completed redo scan
+ read 242 KB redo, 100 data blocks need recovery
+Started redo application at
+ Thread 1: logseq 50, block 19766
+Recovery of Online Redo Log: Thread 1 Group 2 Seq 50 Reading mem 0
+  Mem# 0: /app/oracle/oradata/testdb/redo02.log
+Completed redo application of 0.16MB
+Completed crash recovery at
+ Thread 1: logseq 50, block 20251, scn 1740639
+ 100 data blocks read, 100 data blocks written, 242 redo k-bytes read
+Thu Aug 08 07:24:04 2013
+LGWR: STARTING ARCH PROCESSES
+Thu Aug 08 07:24:04 2013
+ARC0 started with pid=20, OS id=3536 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thread 1 advanced to log sequence 51 (thread open)
+Thread 1 opened at log sequence 51
+  Current log# 3 seq# 51 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Thu Aug 08 07:24:05 2013
+ARC2 started with pid=22, OS id=3540 
+Thu Aug 08 07:24:05 2013
+ARC1 started with pid=21, OS id=3538 
+Thu Aug 08 07:24:05 2013
+SMON: enabling cache recovery
+ARC1: Archival started
+ARC2: Archival started
+ARC2: Becoming the 'no FAL' ARCH
+ARC2: Becoming the 'no SRL' ARCH
+[3529] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:4294458290 end:4294458440 diff:150 (1 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+ARC1: Becoming the heartbeat ARCH
+Archived Log entry 15 added for thread 1 sequence 50 ID 0x99dd5a91 dest 1:
+Archived Log entry 16 added for thread 1 sequence 50 ID 0x99dd5a91 dest 2:
+Thu Aug 08 07:24:06 2013
+ARC3 started with pid=23, OS id=3542 
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+Starting background process QMNC
+Thu Aug 08 07:24:07 2013
+QMNC started with pid=24, OS id=3544 
+Completed: alter database open
+Thu Aug 08 07:24:07 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Thu Aug 08 07:24:08 2013
+Starting background process CJQ0
+Thu Aug 08 07:24:08 2013
+CJQ0 started with pid=27, OS id=3560 
+Thu Aug 08 07:29:07 2013
+Starting background process SMCO
+Thu Aug 08 07:29:07 2013
+SMCO started with pid=25, OS id=3608 
+Thu Aug 08 07:53:34 2013
+Thread 1 advanced to log sequence 52 (LGWR switch)
+  Current log# 1 seq# 52 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Thu Aug 08 07:53:40 2013
+Archived Log entry 17 added for thread 1 sequence 51 ID 0x99dd5a91 dest 1:
+Archived Log entry 18 added for thread 1 sequence 51 ID 0x99dd5a91 dest 2:
+Thread 1 advanced to log sequence 53 (LGWR switch)
+  Current log# 2 seq# 53 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Thu Aug 08 07:53:42 2013
+Archived Log entry 19 added for thread 1 sequence 52 ID 0x99dd5a91 dest 1:
+Archived Log entry 20 added for thread 1 sequence 52 ID 0x99dd5a91 dest 2:
+Thu Aug 08 07:56:21 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Thu Aug 08 07:56:22 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 9
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Thu Aug 08 07:56:26 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Thu Aug 08 07:56:26 2013
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 07:56:26 2013
+ARCH shutting down
+ARC3: Archival stopped
+Thu Aug 08 07:56:26 2013
+ARCH shutting down
+ARC2: Archival stopped
+Thu Aug 08 07:56:26 2013
+ARCH shutting down
+ARC1: Archival stopped
+Thu Aug 08 07:56:26 2013
+ARCH shutting down
+ARC0: Archival stopped
+Thread 1 closed at log sequence 53
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 07:56:28 2013
+Stopping background process VKTM
+Thu Aug 08 07:56:30 2013
+Instance shutdown complete
+Thu Aug 08 07:56:36 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 07:56:36 2013
+PMON started with pid=2, OS id=4231 
+Thu Aug 08 07:56:36 2013
+PSP0 started with pid=3, OS id=4233 
+Thu Aug 08 07:56:37 2013
+VKTM started with pid=4, OS id=4235 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 07:56:37 2013
+GEN0 started with pid=5, OS id=4239 
+Thu Aug 08 07:56:37 2013
+DIAG started with pid=6, OS id=4241 
+Thu Aug 08 07:56:37 2013
+DBRM started with pid=7, OS id=4243 
+Thu Aug 08 07:56:37 2013
+DIA0 started with pid=8, OS id=4245 
+Thu Aug 08 07:56:37 2013
+MMAN started with pid=9, OS id=4247 
+Thu Aug 08 07:56:37 2013
+DBW0 started with pid=10, OS id=4249 
+Thu Aug 08 07:56:37 2013
+LGWR started with pid=11, OS id=4251 
+Thu Aug 08 07:56:37 2013
+CKPT started with pid=12, OS id=4253 
+Thu Aug 08 07:56:38 2013
+SMON started with pid=13, OS id=4255 
+Thu Aug 08 07:56:38 2013
+RECO started with pid=14, OS id=4257 
+Thu Aug 08 07:56:38 2013
+MMON started with pid=15, OS id=4259 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 07:56:38 2013
+MMNL started with pid=16, OS id=4261 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 07:56:38 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606202422
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 07:56:42 2013
+ALTER DATABASE OPEN
+LGWR: STARTING ARCH PROCESSES
+Thu Aug 08 07:56:42 2013
+ARC0 started with pid=20, OS id=4291 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thu Aug 08 07:56:42 2013
+ARC1 started with pid=21, OS id=4293 
+Thread 1 opened at log sequence 53
+  Current log# 2 seq# 53 mem# 0: /app/oracle/oradata/testdb/redo02.log
+Successful open of redo thread 1
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+SMON: enabling cache recovery
+Thu Aug 08 07:56:42 2013
+ARC2 started with pid=22, OS id=4295 
+ARC1: Archival started
+ARC2: Archival started
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+ARC2: Becoming the heartbeat ARCH
+Thu Aug 08 07:56:42 2013
+ARC3 started with pid=23, OS id=4297 
+[4289] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:1447664 end:1447714 diff:50 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Thu Aug 08 07:56:42 2013
+QMNC started with pid=24, OS id=4299 
+Completed: ALTER DATABASE OPEN
+Thu Aug 08 07:56:43 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Starting background process CJQ0
+Thu Aug 08 07:56:43 2013
+CJQ0 started with pid=30, OS id=4313 
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+Thu Aug 08 08:01:42 2013
+Starting background process SMCO
+Thu Aug 08 08:01:42 2013
+SMCO started with pid=29, OS id=4386 
+Thu Aug 08 13:50:25 2013
+Thread 1 advanced to log sequence 54 (LGWR switch)
+  Current log# 3 seq# 54 mem# 0: /app/oracle/oradata/testdb/redo03.log
+Thu Aug 08 13:50:27 2013
+Archived Log entry 21 added for thread 1 sequence 53 ID 0x99dd5a91 dest 1:
+Archived Log entry 22 added for thread 1 sequence 53 ID 0x99dd5a91 dest 2:
+Thu Aug 08 13:52:47 2013
+Thread 1 advanced to log sequence 55 (LGWR switch)
+  Current log# 1 seq# 55 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Thu Aug 08 13:52:47 2013
+Archived Log entry 23 added for thread 1 sequence 54 ID 0x99dd5a91 dest 1:
+Archived Log entry 24 added for thread 1 sequence 54 ID 0x99dd5a91 dest 2:
+Thu Aug 08 14:28:46 2013
+alter database backup controlfile to trace as '/app/oracle/re11.sql'
+Completed: alter database backup controlfile to trace as '/app/oracle/re11.sql'
+Thu Aug 08 17:19:05 2013
+drop tablespace test including contents and datafiles
+Deleted file /app/oracle/oradata/testdb/test01.dbf
+Completed: drop tablespace test including contents and datafiles
+Thu Aug 08 17:19:44 2013
+Shutting down instance (immediate)
+Stopping background process SMCO
+Shutting down instance: further logons disabled
+Thu Aug 08 17:19:45 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 6
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Thu Aug 08 17:19:50 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Thu Aug 08 17:19:51 2013
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:19:51 2013
+ARCH shutting down
+ARC3: Archival stopped
+Thu Aug 08 17:19:51 2013
+ARCH shutting down
+ARC2: Archival stopped
+Thu Aug 08 17:19:51 2013
+ARCH shutting down
+ARC1: Archival stopped
+Thu Aug 08 17:19:51 2013
+ARCH shutting down
+ARC0: Archival stopped
+Thread 1 closed at log sequence 55
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:19:51 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:19:53 2013
+Instance shutdown complete
+Thu Aug 08 17:22:24 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:22:26 2013
+PMON started with pid=2, OS id=4759 
+Thu Aug 08 17:22:26 2013
+PSP0 started with pid=3, OS id=4761 
+Thu Aug 08 17:22:26 2013
+VKTM started with pid=4, OS id=4763 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:22:26 2013
+GEN0 started with pid=5, OS id=4767 
+Thu Aug 08 17:22:26 2013
+DIAG started with pid=6, OS id=4769 
+Thu Aug 08 17:22:26 2013
+DBRM started with pid=7, OS id=4771 
+Thu Aug 08 17:22:26 2013
+DIA0 started with pid=8, OS id=4773 
+Thu Aug 08 17:22:26 2013
+MMAN started with pid=9, OS id=4775 
+Thu Aug 08 17:22:26 2013
+DBW0 started with pid=10, OS id=4777 
+Thu Aug 08 17:22:26 2013
+LGWR started with pid=11, OS id=4779 
+Thu Aug 08 17:22:26 2013
+CKPT started with pid=12, OS id=4781 
+Thu Aug 08 17:22:26 2013
+SMON started with pid=13, OS id=4783 
+Thu Aug 08 17:22:26 2013
+RECO started with pid=14, OS id=4785 
+Thu Aug 08 17:22:26 2013
+MMON started with pid=15, OS id=4787 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:22:26 2013
+MMNL started with pid=16, OS id=4789 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:22:26 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606287826
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 17:22:31 2013
+ALTER DATABASE OPEN
+LGWR: STARTING ARCH PROCESSES
+Thu Aug 08 17:22:31 2013
+ARC0 started with pid=19, OS id=4818 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thread 1 opened at log sequence 55
+  Current log# 1 seq# 55 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+Thu Aug 08 17:22:32 2013
+ARC1 started with pid=21, OS id=4820 
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Thu Aug 08 17:22:32 2013
+ARC2 started with pid=22, OS id=4822 
+SMON: enabling cache recovery
+ARC1: Archival started
+ARC2: Archival started
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+ARC2: Becoming the heartbeat ARCH
+Thu Aug 08 17:22:32 2013
+ARC3 started with pid=23, OS id=4824 
+[4816] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:35396854 end:35396914 diff:60 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Thu Aug 08 17:22:32 2013
+QMNC started with pid=24, OS id=4826 
+Completed: ALTER DATABASE OPEN
+Thu Aug 08 17:22:33 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Starting background process CJQ0
+Thu Aug 08 17:22:33 2013
+CJQ0 started with pid=29, OS id=4840 
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+Thu Aug 08 17:25:54 2013
+Shutting down instance (abort)
+License high water mark = 3
+USER (ospid: 4816): terminating the instance
+Instance terminated by USER, pid = 4816
+Thu Aug 08 17:25:55 2013
+Instance shutdown complete
+Thu Aug 08 17:25:58 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:25:58 2013
+PMON started with pid=2, OS id=4912 
+Thu Aug 08 17:25:58 2013
+PSP0 started with pid=3, OS id=4914 
+Thu Aug 08 17:25:58 2013
+VKTM started with pid=4, OS id=4916 at elevated priority
+Thu Aug 08 17:25:58 2013
+GEN0 started with pid=5, OS id=4920 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:25:58 2013
+DIAG started with pid=6, OS id=4922 
+Thu Aug 08 17:25:58 2013
+DBRM started with pid=7, OS id=4924 
+Thu Aug 08 17:25:58 2013
+DIA0 started with pid=8, OS id=4926 
+Thu Aug 08 17:25:58 2013
+MMAN started with pid=9, OS id=4928 
+Thu Aug 08 17:25:58 2013
+DBW0 started with pid=10, OS id=4930 
+Thu Aug 08 17:25:58 2013
+LGWR started with pid=11, OS id=4932 
+Thu Aug 08 17:25:58 2013
+CKPT started with pid=12, OS id=4934 
+Thu Aug 08 17:25:58 2013
+SMON started with pid=13, OS id=4936 
+Thu Aug 08 17:25:58 2013
+RECO started with pid=14, OS id=4938 
+Thu Aug 08 17:25:58 2013
+MMON started with pid=15, OS id=4940 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:25:58 2013
+MMNL started with pid=16, OS id=4942 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:25:59 2013
+ALTER DATABASE   MOUNT
+ORA-00210: cannot open the specified control file
+ORA-00202: control file: '/app/oracle/oradata/testdb/control01.ctl'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+ORA-205 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 17:25:59 2013
+Checker run found 1 new persistent data failures
+Thu Aug 08 17:26:32 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1507 signalled during: ALTER DATABASE CLOSE NORMAL...
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:26:32 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:26:34 2013
+Instance shutdown complete
+Thu Aug 08 17:27:08 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:27:09 2013
+PMON started with pid=2, OS id=5021 
+Thu Aug 08 17:27:09 2013
+PSP0 started with pid=3, OS id=5023 
+Thu Aug 08 17:27:09 2013
+VKTM started with pid=4, OS id=5025 at elevated priority
+Thu Aug 08 17:27:09 2013
+GEN0 started with pid=5, OS id=5029 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:27:09 2013
+DIAG started with pid=6, OS id=5031 
+Thu Aug 08 17:27:09 2013
+DBRM started with pid=7, OS id=5033 
+Thu Aug 08 17:27:09 2013
+DIA0 started with pid=8, OS id=5035 
+Thu Aug 08 17:27:09 2013
+MMAN started with pid=9, OS id=5037 
+Thu Aug 08 17:27:09 2013
+DBW0 started with pid=10, OS id=5039 
+Thu Aug 08 17:27:09 2013
+LGWR started with pid=11, OS id=5041 
+Thu Aug 08 17:27:09 2013
+CKPT started with pid=12, OS id=5043 
+Thu Aug 08 17:27:09 2013
+SMON started with pid=13, OS id=5045 
+Thu Aug 08 17:27:09 2013
+RECO started with pid=14, OS id=5047 
+Thu Aug 08 17:27:09 2013
+MMON started with pid=15, OS id=5049 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:27:09 2013
+MMNL started with pid=16, OS id=5051 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:27:09 2013
+ALTER DATABASE   MOUNT
+ORA-214 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 17:27:09 2013
+Checker run found 1 new persistent data failures
+Thu Aug 08 17:31:35 2013
+alter database mount
+Thu Aug 08 17:31:39 2013
+Successful mount of redo thread 1, with mount id 2606306551
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: alter database mount
+Thu Aug 08 17:37:53 2013
+Shutting down instance (abort)
+License high water mark = 1
+USER (ospid: 5056): terminating the instance
+Instance terminated by USER, pid = 5056
+Thu Aug 08 17:37:54 2013
+Instance shutdown complete
+Thu Aug 08 17:37:56 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:37:57 2013
+PMON started with pid=2, OS id=5182 
+Thu Aug 08 17:37:57 2013
+PSP0 started with pid=3, OS id=5184 
+Thu Aug 08 17:37:57 2013
+VKTM started with pid=4, OS id=5186 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:37:57 2013
+GEN0 started with pid=5, OS id=5190 
+Thu Aug 08 17:37:57 2013
+DIAG started with pid=6, OS id=5192 
+Thu Aug 08 17:37:57 2013
+DBRM started with pid=7, OS id=5194 
+Thu Aug 08 17:37:57 2013
+DIA0 started with pid=8, OS id=5196 
+Thu Aug 08 17:37:57 2013
+MMAN started with pid=9, OS id=5198 
+Thu Aug 08 17:37:57 2013
+DBW0 started with pid=10, OS id=5200 
+Thu Aug 08 17:37:57 2013
+LGWR started with pid=11, OS id=5202 
+Thu Aug 08 17:37:57 2013
+CKPT started with pid=12, OS id=5204 
+Thu Aug 08 17:37:57 2013
+SMON started with pid=13, OS id=5206 
+Thu Aug 08 17:37:57 2013
+RECO started with pid=14, OS id=5208 
+Thu Aug 08 17:37:57 2013
+MMON started with pid=15, OS id=5210 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:37:57 2013
+MMNL started with pid=16, OS id=5212 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:37:57 2013
+ALTER DATABASE   MOUNT
+ORA-00210: cannot open the specified control file
+ORA-00202: control file: '/app/oracle/fast_recovery_area/testdb/control02.ctl'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+ORA-00210: cannot open the specified control file
+ORA-00202: control file: '/app/oracle/oradata/testdb/control01.ctl'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+ORA-205 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 17:37:57 2013
+Checker run found 1 new persistent data failures
+Thu Aug 08 17:38:42 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1507 signalled during: ALTER DATABASE CLOSE NORMAL...
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:38:43 2013
+Stopping background process VKTM
+Thu Aug 08 17:38:45 2013
+Instance shutdown complete
+Thu Aug 08 17:40:03 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:40:03 2013
+PMON started with pid=2, OS id=5296 
+Thu Aug 08 17:40:03 2013
+PSP0 started with pid=3, OS id=5298 
+Thu Aug 08 17:40:03 2013
+VKTM started with pid=4, OS id=5300 at elevated priority
+Thu Aug 08 17:40:03 2013
+GEN0 started with pid=5, OS id=5304 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:40:03 2013
+DIAG started with pid=6, OS id=5306 
+Thu Aug 08 17:40:03 2013
+DBRM started with pid=7, OS id=5308 
+Thu Aug 08 17:40:03 2013
+DIA0 started with pid=8, OS id=5310 
+Thu Aug 08 17:40:03 2013
+MMAN started with pid=9, OS id=5312 
+Thu Aug 08 17:40:03 2013
+DBW0 started with pid=10, OS id=5314 
+Thu Aug 08 17:40:03 2013
+LGWR started with pid=11, OS id=5316 
+Thu Aug 08 17:40:03 2013
+CKPT started with pid=12, OS id=5318 
+Thu Aug 08 17:40:03 2013
+SMON started with pid=13, OS id=5320 
+Thu Aug 08 17:40:03 2013
+RECO started with pid=14, OS id=5322 
+Thu Aug 08 17:40:03 2013
+MMON started with pid=15, OS id=5324 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:40:03 2013
+MMNL started with pid=16, OS id=5326 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:40:03 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606281715
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 17:40:08 2013
+ALTER DATABASE OPEN
+Thu Aug 08 17:40:08 2013
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_5355.trc:
+ORA-00313: open failed for members of log group 1 of thread 1
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_5355.trc:
+ORA-00313: open failed for members of log group 2 of thread 1
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_5355.trc:
+ORA-00313: open failed for members of log group 3 of thread 1
+ORA-00312: online log 3 thread 1: '/app/oracle/oradata/testdb/redo03.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Checker run found 7 new persistent data failures
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_5353.trc:
+ORA-01122: database file 1 failed verification check
+ORA-01110: data file 1: '/app/oracle/oradata/testdb/system01.dbf'
+ORA-01207: file is more recent than control file - old control file
+ORA-1122 signalled during: ALTER DATABASE OPEN...
+Thu Aug 08 17:41:23 2013
+alter database backup controlfile to trace as '/app/oracle/re12.sql'
+Completed: alter database backup controlfile to trace as '/app/oracle/re12.sql'
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1109 signalled during: ALTER DATABASE CLOSE NORMAL...
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Thu Aug 08 17:41:30 2013
+Stopping background process VKTM
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:41:32 2013
+Instance shutdown complete
+Thu Aug 08 17:55:40 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 17:55:40 2013
+PMON started with pid=2, OS id=5495 
+Thu Aug 08 17:55:40 2013
+PSP0 started with pid=3, OS id=5497 
+Thu Aug 08 17:55:40 2013
+VKTM started with pid=4, OS id=5499 at elevated priority
+Thu Aug 08 17:55:40 2013
+GEN0 started with pid=5, OS id=5503 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 17:55:40 2013
+DIAG started with pid=6, OS id=5505 
+Thu Aug 08 17:55:40 2013
+DBRM started with pid=7, OS id=5507 
+Thu Aug 08 17:55:40 2013
+DIA0 started with pid=8, OS id=5509 
+Thu Aug 08 17:55:40 2013
+MMAN started with pid=9, OS id=5511 
+Thu Aug 08 17:55:40 2013
+DBW0 started with pid=10, OS id=5513 
+Thu Aug 08 17:55:40 2013
+LGWR started with pid=11, OS id=5515 
+Thu Aug 08 17:55:40 2013
+CKPT started with pid=12, OS id=5517 
+Thu Aug 08 17:55:40 2013
+SMON started with pid=13, OS id=5519 
+Thu Aug 08 17:55:40 2013
+RECO started with pid=14, OS id=5521 
+Thu Aug 08 17:55:40 2013
+MMON started with pid=15, OS id=5523 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 17:55:40 2013
+MMNL started with pid=16, OS id=5525 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 17:55:40 2013
+CREATE CONTROLFILE REUSE DATABASE "TESTDB" RESETLOGS  ARCHIVELOG
+    MAXLOGFILES 16
+    MAXLOGMEMBERS 3
+    MAXDATAFILES 100
+    MAXINSTANCES 8
+    MAXLOGHISTORY 292
+LOGFILE
+  GROUP 1 '/app/oracle/oradata/testdb/redo01.log'  SIZE 50M BLOCKSIZE 512,
+  GROUP 2 '/app/oracle/oradata/testdb/redo02.log'  SIZE 50M BLOCKSIZE 512,
+  GROUP 3 '/app/oracle/oradata/testdb/redo03.log'  SIZE 50M BLOCKSIZE 512
+-- STANDBY LOGFILE
+DATAFILE
+  '/app/oracle/oradata/testdb/system01.dbf',
+  '/app/oracle/oradata/testdb/sysaux01.dbf',
+  '/app/oracle/oradata/testdb/undotbs01.dbf',
+  '/app/oracle/oradata/testdb/users01.dbf',
+  '/app/oracle/oradata/testdb/example01.dbf'
+CHARACTER SET KO16MSWIN949
+WARNING: Default Temporary Tablespace not specified in CREATE DATABASE command
+Default Temporary Tablespace will be necessary for a locally managed database in future release
+Successful mount of redo thread 1, with mount id 2606282140
+Completed: CREATE CONTROLFILE REUSE DATABASE "TESTDB" RESETLOGS  ARCHIVELOG
+    MAXLOGFILES 16
+    MAXLOGMEMBERS 3
+    MAXDATAFILES 100
+    MAXINSTANCES 8
+    MAXLOGHISTORY 292
+LOGFILE
+  GROUP 1 '/app/oracle/oradata/testdb/redo01.log'  SIZE 50M BLOCKSIZE 512,
+  GROUP 2 '/app/oracle/oradata/testdb/redo02.log'  SIZE 50M BLOCKSIZE 512,
+  GROUP 3 '/app/oracle/oradata/testdb/redo03.log'  SIZE 50M BLOCKSIZE 512
+-- STANDBY LOGFILE
+DATAFILE
+  '/app/oracle/oradata/testdb/system01.dbf',
+  '/app/oracle/oradata/testdb/sysaux01.dbf',
+  '/app/oracle/oradata/testdb/undotbs01.dbf',
+  '/app/oracle/oradata/testdb/users01.dbf',
+  '/app/oracle/oradata/testdb/example01.dbf'
+CHARACTER SET KO16MSWIN949
+Thu Aug 08 17:55:43 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+alter database open resetlogs
+ORA-1194 signalled during: alter database open resetlogs...
+Thu Aug 08 17:55:47 2013
+Checker run found 5 new persistent data failures
+Thu Aug 08 17:56:03 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1109 signalled during: ALTER DATABASE CLOSE NORMAL...
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 17:56:06 2013
+Stopping background process VKTM
+Thu Aug 08 17:56:08 2013
+Instance shutdown complete
+Thu Aug 08 19:49:25 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 19:49:26 2013
+PMON started with pid=2, OS id=6153 
+Thu Aug 08 19:49:26 2013
+PSP0 started with pid=3, OS id=6155 
+Thu Aug 08 19:49:26 2013
+VKTM started with pid=4, OS id=6157 at elevated priority
+Thu Aug 08 19:49:26 2013
+GEN0 started with pid=5, OS id=6161 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 19:49:26 2013
+DIAG started with pid=6, OS id=6163 
+Thu Aug 08 19:49:26 2013
+DBRM started with pid=7, OS id=6165 
+Thu Aug 08 19:49:26 2013
+DIA0 started with pid=8, OS id=6167 
+Thu Aug 08 19:49:26 2013
+MMAN started with pid=9, OS id=6169 
+Thu Aug 08 19:49:26 2013
+DBW0 started with pid=10, OS id=6171 
+Thu Aug 08 19:49:26 2013
+LGWR started with pid=11, OS id=6173 
+Thu Aug 08 19:49:26 2013
+CKPT started with pid=12, OS id=6175 
+Thu Aug 08 19:49:26 2013
+SMON started with pid=13, OS id=6177 
+Thu Aug 08 19:49:26 2013
+RECO started with pid=14, OS id=6179 
+Thu Aug 08 19:49:26 2013
+MMON started with pid=15, OS id=6181 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 19:49:26 2013
+MMNL started with pid=16, OS id=6183 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 19:49:27 2013
+ALTER DATABASE   MOUNT
+ORA-214 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 19:49:45 2013
+alter database mount
+Set as converted control file due to db_unique_name mismatch
+Changing di2dbun from  to testdb
+Thu Aug 08 19:49:49 2013
+Successful mount of redo thread 1, with mount id 2606317145
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: alter database mount
+Thu Aug 08 19:50:05 2013
+alter database open
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_6202.trc:
+ORA-01589: must use RESETLOGS or NORESETLOGS option for database open
+ORA-1589 signalled during: alter database open...
+Thu Aug 08 19:50:23 2013
+alter database open resetlogs
+Signalling error 1152 for datafile 1!
+ORA-1152 signalled during: alter database open resetlogs...
+Thu Aug 08 20:04:30 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Thu Aug 08 20:07:04 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1109 signalled during: ALTER DATABASE CLOSE NORMAL...
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:07:06 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:07:08 2013
+Instance shutdown complete
+Thu Aug 08 20:14:12 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 20:14:13 2013
+PMON started with pid=2, OS id=6372 
+Thu Aug 08 20:14:13 2013
+PSP0 started with pid=3, OS id=6374 
+Thu Aug 08 20:14:13 2013
+VKTM started with pid=4, OS id=6376 at elevated priority
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 20:14:13 2013
+GEN0 started with pid=5, OS id=6380 
+Thu Aug 08 20:14:13 2013
+DIAG started with pid=6, OS id=6382 
+Thu Aug 08 20:14:13 2013
+DBRM started with pid=7, OS id=6384 
+Thu Aug 08 20:14:13 2013
+DIA0 started with pid=8, OS id=6386 
+Thu Aug 08 20:14:13 2013
+MMAN started with pid=9, OS id=6388 
+Thu Aug 08 20:14:13 2013
+DBW0 started with pid=10, OS id=6390 
+Thu Aug 08 20:14:13 2013
+LGWR started with pid=11, OS id=6392 
+Thu Aug 08 20:14:13 2013
+CKPT started with pid=12, OS id=6394 
+Thu Aug 08 20:14:13 2013
+SMON started with pid=13, OS id=6396 
+Thu Aug 08 20:14:13 2013
+RECO started with pid=14, OS id=6398 
+Thu Aug 08 20:14:13 2013
+MMON started with pid=15, OS id=6400 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 20:14:13 2013
+MMNL started with pid=16, OS id=6402 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 20:14:13 2013
+ALTER DATABASE   MOUNT
+ORA-214 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 20:15:28 2013
+alter database mount
+Thu Aug 08 20:15:32 2013
+Successful mount of redo thread 1, with mount id 2606310752
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: alter database mount
+alter database open
+LGWR: STARTING ARCH PROCESSES
+Thu Aug 08 20:15:37 2013
+ARC0 started with pid=20, OS id=6437 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thread 1 opened at log sequence 55
+  Current log# 1 seq# 55 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+Thu Aug 08 20:15:38 2013
+ARC1 started with pid=21, OS id=6439 
+Thu Aug 08 20:15:38 2013
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Thu Aug 08 20:15:38 2013
+SMON: enabling cache recovery
+ARC1: Archival started
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+Thu Aug 08 20:15:38 2013
+ARC3 started with pid=23, OS id=6443 
+Thu Aug 08 20:15:38 2013
+ARC2 started with pid=22, OS id=6441 
+[6407] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:45783014 end:45783084 diff:70 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Thu Aug 08 20:15:39 2013
+QMNC started with pid=24, OS id=6445 
+Completed: alter database open
+Thu Aug 08 20:15:39 2013
+Starting background process CJQ0
+Thu Aug 08 20:15:39 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Thu Aug 08 20:15:39 2013
+CJQ0 started with pid=26, OS id=6459 
+ARC2: Archival started
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+ARC0: Becoming the heartbeat ARCH
+Thu Aug 08 20:18:59 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Thu Aug 08 20:18:59 2013
+Stopping background process CJQ0
+Stopping background process QMNC
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 5
+Stopping Job queue slave processes, flags = 7
+Job queue slave processes stopped
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Thu Aug 08 20:19:03 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Thu Aug 08 20:19:03 2013
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:19:03 2013
+ARCH shutting down
+ARC3: Archival stopped
+Thu Aug 08 20:19:03 2013
+ARCH shutting down
+ARC2: Archival stopped
+Thu Aug 08 20:19:03 2013
+ARCH shutting down
+ARC1: Archival stopped
+Thu Aug 08 20:19:03 2013
+ARCH shutting down
+ARC0: Archival stopped
+Thread 1 closed at log sequence 55
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:19:03 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:19:05 2013
+Instance shutdown complete
+Thu Aug 08 20:19:09 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 20:19:09 2013
+PMON started with pid=2, OS id=6573 
+Thu Aug 08 20:19:09 2013
+PSP0 started with pid=3, OS id=6575 
+Thu Aug 08 20:19:09 2013
+VKTM started with pid=4, OS id=6577 at elevated priority
+Thu Aug 08 20:19:09 2013
+GEN0 started with pid=5, OS id=6581 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 20:19:09 2013
+DIAG started with pid=6, OS id=6583 
+Thu Aug 08 20:19:09 2013
+DBRM started with pid=7, OS id=6585 
+Thu Aug 08 20:19:09 2013
+DIA0 started with pid=8, OS id=6587 
+Thu Aug 08 20:19:09 2013
+MMAN started with pid=9, OS id=6589 
+Thu Aug 08 20:19:09 2013
+DBW0 started with pid=10, OS id=6591 
+Thu Aug 08 20:19:09 2013
+LGWR started with pid=11, OS id=6593 
+Thu Aug 08 20:19:09 2013
+CKPT started with pid=12, OS id=6595 
+Thu Aug 08 20:19:09 2013
+SMON started with pid=13, OS id=6597 
+Thu Aug 08 20:19:09 2013
+RECO started with pid=14, OS id=6599 
+Thu Aug 08 20:19:09 2013
+MMON started with pid=15, OS id=6601 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 20:19:09 2013
+MMNL started with pid=16, OS id=6603 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 20:19:09 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606316349
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 20:19:13 2013
+ALTER DATABASE OPEN
+LGWR: STARTING ARCH PROCESSES
+Thu Aug 08 20:19:13 2013
+ARC0 started with pid=20, OS id=6632 
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Thread 1 opened at log sequence 55
+  Current log# 1 seq# 55 mem# 0: /app/oracle/oradata/testdb/redo01.log
+Successful open of redo thread 1
+Thu Aug 08 20:19:14 2013
+ARC1 started with pid=21, OS id=6634 
+MTTR advisory is disabled because FAST_START_MTTR_TARGET is not set
+Thu Aug 08 20:19:14 2013
+ARC2 started with pid=22, OS id=6636 
+[6630] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:45999014 end:45999044 diff:30 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling cache recovery
+SMON: enabling tx recovery
+Database Characterset is KO16MSWIN949
+No Resource Manager plan active
+replication_dependency_tracking turned off (no async multimaster replication found)
+ARC1: Archival started
+ARC2: Archival started
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+ARC2: Becoming the heartbeat ARCH
+Starting background process QMNC
+Thu Aug 08 20:19:15 2013
+QMNC started with pid=24, OS id=6640 
+Completed: ALTER DATABASE OPEN
+Thu Aug 08 20:19:15 2013
+db_recovery_file_dest_size of 4002 MB is 0.00% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Thu Aug 08 20:19:15 2013
+ARC3 started with pid=23, OS id=6638 
+Starting background process CJQ0
+Thu Aug 08 20:19:15 2013
+CJQ0 started with pid=28, OS id=6654 
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+Thu Aug 08 20:19:57 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process QMNC
+Thu Aug 08 20:19:57 2013
+Stopping background process CJQ0
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 3
+Stopping Job queue slave processes, flags = 7
+Job queue slave processes stopped
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Thu Aug 08 20:20:00 2013
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Thu Aug 08 20:20:01 2013
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:20:01 2013
+ARCH shutting down
+ARC3: Archival stopped
+Thu Aug 08 20:20:01 2013
+ARCH shutting down
+ARC2: Archival stopped
+Thu Aug 08 20:20:01 2013
+ARCH shutting down
+ARC1: Archival stopped
+Thu Aug 08 20:20:01 2013
+ARCH shutting down
+ARC0: Archival stopped
+Thread 1 closed at log sequence 55
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+ORA-210 signalled during: ALTER DATABASE DISMOUNT...
+Shutting down instance (abort)
+License high water mark = 3
+USER (ospid: 6630): terminating the instance
+Instance terminated by USER, pid = 6630
+Thu Aug 08 20:20:05 2013
+Instance shutdown complete
+Thu Aug 08 20:24:07 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 20:24:07 2013
+PMON started with pid=2, OS id=6723 
+Thu Aug 08 20:24:07 2013
+PSP0 started with pid=3, OS id=6725 
+Thu Aug 08 20:24:07 2013
+VKTM started with pid=4, OS id=6727 at elevated priority
+Thu Aug 08 20:24:07 2013
+GEN0 started with pid=5, OS id=6731 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 20:24:07 2013
+DIAG started with pid=6, OS id=6733 
+Thu Aug 08 20:24:07 2013
+DBRM started with pid=7, OS id=6735 
+Thu Aug 08 20:24:07 2013
+DIA0 started with pid=8, OS id=6737 
+Thu Aug 08 20:24:07 2013
+MMAN started with pid=9, OS id=6739 
+Thu Aug 08 20:24:07 2013
+DBW0 started with pid=10, OS id=6741 
+Thu Aug 08 20:24:07 2013
+LGWR started with pid=11, OS id=6743 
+Thu Aug 08 20:24:07 2013
+CKPT started with pid=12, OS id=6745 
+Thu Aug 08 20:24:07 2013
+SMON started with pid=13, OS id=6747 
+Thu Aug 08 20:24:07 2013
+RECO started with pid=14, OS id=6749 
+Thu Aug 08 20:24:07 2013
+MMON started with pid=15, OS id=6751 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 20:24:07 2013
+MMNL started with pid=16, OS id=6753 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 20:24:07 2013
+ALTER DATABASE   MOUNT
+ORA-00210: cannot open the specified control file
+ORA-00202: control file: '/app/oracle/fast_recovery_area/testdb/control02.ctl'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+ORA-00210: cannot open the specified control file
+ORA-00202: control file: '/app/oracle/oradata/testdb/control01.ctl'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+ORA-205 signalled during: ALTER DATABASE   MOUNT...
+Thu Aug 08 20:27:21 2013
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 1
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+ORA-1507 signalled during: ALTER DATABASE CLOSE NORMAL...
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:27:22 2013
+Stopping background process VKTM
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Thu Aug 08 20:27:25 2013
+Instance shutdown complete
+Thu Aug 08 20:28:41 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
+  compatible               = "11.2.0.0.0"
+  log_archive_dest_1       = "location=/data/arc1"
+  log_archive_dest_2       = "location=/data/arc2"
+  log_archive_format       = "%s_%t_%r.arc"
+  db_recovery_file_dest    = "/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 4002M
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  db_domain                = ""
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=testdbXDB)"
+  audit_file_dest          = "/app/oracle/admin/testdb/adump"
+  audit_trail              = "DB"
+  db_name                  = "testdb"
+  open_cursors             = 300
+  diagnostic_dest          = "/app/oracle"
+Thu Aug 08 20:28:41 2013
+PMON started with pid=2, OS id=6875 
+Thu Aug 08 20:28:41 2013
+PSP0 started with pid=3, OS id=6877 
+Thu Aug 08 20:28:41 2013
+VKTM started with pid=4, OS id=6879 at elevated priority
+Thu Aug 08 20:28:41 2013
+GEN0 started with pid=5, OS id=6883 
+VKTM running at (1)millisec precision with DBRM quantum (100)ms
+Thu Aug 08 20:28:41 2013
+DIAG started with pid=6, OS id=6885 
+Thu Aug 08 20:28:41 2013
+DBRM started with pid=7, OS id=6887 
+Thu Aug 08 20:28:41 2013
+DIA0 started with pid=8, OS id=6889 
+Thu Aug 08 20:28:41 2013
+MMAN started with pid=9, OS id=6891 
+Thu Aug 08 20:28:41 2013
+DBW0 started with pid=10, OS id=6893 
+Thu Aug 08 20:28:41 2013
+LGWR started with pid=11, OS id=6895 
+Thu Aug 08 20:28:41 2013
+CKPT started with pid=12, OS id=6897 
+Thu Aug 08 20:28:41 2013
+SMON started with pid=13, OS id=6899 
+Thu Aug 08 20:28:41 2013
+RECO started with pid=14, OS id=6901 
+Thu Aug 08 20:28:41 2013
+MMON started with pid=15, OS id=6903 
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL=TCP))'...
+Thu Aug 08 20:28:41 2013
+MMNL started with pid=16, OS id=6905 
+starting up 1 shared server(s) ...
+ORACLE_BASE from environment = /app/oracle
+Thu Aug 08 20:28:41 2013
+ALTER DATABASE   MOUNT
+Successful mount of redo thread 1, with mount id 2606292601
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE   MOUNT
+Thu Aug 08 20:29:46 2013
+alter database open
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_ora_6932.trc:
+ORA-01122: database file 1 failed verification check
+ORA-01110: data file 1: '/app/oracle/oradata/testdb/system01.dbf'
+ORA-01207: file is more recent than control file - old control file
+ORA-1122 signalled during: alter database open...
+Thu Aug 08 20:29:46 2013
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_6936.trc:
+ORA-00338: log 1 of thread 1 is more recent than control file
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_6936.trc:
+ORA-00338: log 1 of thread 1 is more recent than control file
+ORA-00312: online log 1 thread 1: '/app/oracle/oradata/testdb/redo01.log'
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_6936.trc:
+ORA-00338: log 2 of thread 1 is more recent than control file
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_6936.trc:
+ORA-00338: log 2 of thread 1 is more recent than control file
+ORA-00312: online log 2 thread 1: '/app/oracle/oradata/testdb/redo02.log'
+Errors in file /app/oracle/diag/rdbms/testdb/testdb/trace/testdb_m000_6936.trc:
+ORA-00313: open failed for members of log group 3 of thread 1
+ORA-00312: online log 3 thread 1: '/app/oracle/oradata/testdb/redo03.log'
+ORA-27037: unable to obtain file status
+Linux Error: 2: No such file or directory
+Additional information: 3
+Thu Aug 08 20:30:21 2013
+Shutting down instance (abort)
+License high water mark = 1
+USER (ospid: 6932): terminating the instance
+Instance terminated by USER, pid = 6932
+Thu Aug 08 20:30:22 2013
+Instance shutdown complete
+Thu Aug 08 20:30:40 2013
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 2
+Autotune of undo retention is turned on. 
+IMODE=BR
+ILAT =27
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options.
+Using parameter settings in server-side spfile /app/oracle/product/11g/dbs/spfiletestdb.ora
+System parameters with non-default values:
+  processes                = 150
+  memory_target            = 404M
+  control_files            = "/app/oracle/oradata/testdb/control01.ctl"
+  control_files            = "/app/oracle/fast_recovery_area/testdb/control02.ctl"
+  db_block_size            = 8192
